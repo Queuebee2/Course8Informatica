@@ -1,6 +1,8 @@
-from flask import Flask
-app = Flask(__name__)
+from Course8Informatica import create_app
 
-@app.route("/")
-def hello():
-    return "Hello World!"
+# Web Server Gateway Interface
+
+app = create_app()
+
+if __name__ == "__main__":
+    app.run(debug=True)
