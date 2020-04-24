@@ -1,6 +1,8 @@
 """Route declaration."""
 from flask import current_app as app
 from flask import render_template
+from flask import request
+from Course8Informatica import pubmedsearchtool as ps
 
 
 
@@ -28,4 +30,12 @@ def database_test():
                            title="database page",
                            description="This is the database")
 
-
+@app.route('/search', methods=['GET', 'POST'])
+def search_test():
+    "Search page"
+    search_term = '((variant [tiab] OR variants [tiab] OR mutation [tiab] OR mutations [tiab] OR substitutions [tiab] OR substitution [tiab] ) AND ("loss of function" [tiab] OR "loss-of-function" [tiab] OR "haplo-insufficiency" [tiab] OR haploinsufficiency [tiab] OR "bi-allelic" [tiab] OR "biallelic" [tiab] OR recessive [tiab] OR homozygous [tiab] OR heterozygous [tiab] OR "de novo" [tiab] OR dominant [tiab] OR " X-linked" [tiab]) AND ("intellectual" [tiab] OR "mental retardation" [tiab] OR "cognitive" [tiab] OR "developmental" [tiab] OR "neurodevelopmental" [tiab]) AND “last 2 years”[dp] AND KDM3B) '
+    if search_term != "":
+        ids = ps.run_querry(search_term)
+        results = ps.parse_ids(ids)
+    return render_template('search.html',
+                           description=results)
