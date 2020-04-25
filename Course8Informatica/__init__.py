@@ -1,6 +1,4 @@
 from flask import Flask
-from mysql import connector
-
 
 def app():
     """Construct the core application."""
