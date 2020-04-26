@@ -13,7 +13,7 @@ def home():
                            description="Smarter page templates \
                                 with Flask & Jinja.")
 @app.route('/database')
-def database_test():
+def database():
     """database test page."""
     return render_template('database_test.html',
                            title="database page",
