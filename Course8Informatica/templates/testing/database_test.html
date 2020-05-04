@@ -1,0 +1,21 @@
+{% extends 'layout.html' %}
+
+{% block css %}
+  <link href="{{ url_for('static', filename='css/home.css') }}" rel="stylesheet">
+{% endblock %}
+
+{% block content %}
+<h1> this is the database page</h1>
+    <div class="container">
+        <h1>Database page}</h1>
+        <p>do a query </p>
+        <form action="/do-request" method="post">
+        <input type="submit" name="submit_button" value="Do Something">
+        <input type="submit" name="submit_button" value="Do Something Else">
+    </form>
+    </div>
+
+    {% if result %}
+       <p> result of query: {{ result }}</p>
+    {% endif %}
+{% endblock %}

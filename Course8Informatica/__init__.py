@@ -1,17 +1,18 @@
 from flask import Flask
-from flask_sqlalchemy import SQLAlchemy
+from .database_clasess import  EnsembleDbHandler
 
-db = SQLAlchemy()
+ensemble_db = EnsembleDbHandler()
 
-
-def create_app():
+def app():
     """Construct the core application."""
     app = Flask(__name__, instance_relative_config=False)
     app.config.from_object('config.Config')
-    db.init_app(app)
+
+    ensemble_db.init_app(app)
+
 
     with app.app_context():
-        from . import routes
+        from . import routes, errorhandlers
 
 
         return app
