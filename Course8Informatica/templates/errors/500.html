@@ -1,0 +1,14 @@
+{% extends "layout.html" %}
+{% block title %}Server error - error 500{% endblock %}
+{% block content %}
+
+  {% if error_message == "success" %}
+    <p>Sucessfully tested server crash error!</p>
+  {% else %}
+     <h1>Incredible internal server error</h1>
+     <p>something went horribly wrong!!
+  {% endif %}
+
+{# todo: use relative jinja urling thingy instead of "/" {{ url_for('index') }}  #}
+  <p><a href="/">go back to safety</a>
+{% endblock %}
