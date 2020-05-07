@@ -8,5 +8,11 @@
     <div class="container">
         <h1>{{title}}</h1>
         <p>{{description}}</p>
+        <h3> results</h3>
+        <ul>
+        {% for i in result  %}
+            <li>{{ i }}</li>
+        {% endfor %}}
+            </ul>
     </div>
 {% endblock %}

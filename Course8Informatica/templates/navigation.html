@@ -5,6 +5,8 @@
     <title>Navigation template</title>
 </head>
 <body>
-
+    {% for item in nav %}
+        <a href="{{ item.url}}">{{ item.name }}</a><br>
+    {% endfor %}
 </body>
 </html>
