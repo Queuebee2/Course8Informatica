@@ -27,8 +27,14 @@ def database_test():
     nav = [{'name': 'Home', 'url': '/'},
            {'name': 'database', 'url': '/database'},
            {'name': 'test biopython', 'url': '/test_biopython'}]
-    result = db.engine.execute('select * from gene limit 10;').fetchall()
-    print(result)
+
+    try:
+        result = db.engine.execute('select * from gene limit 10;').fetchall()
+        print(result)
+    except Exception as e:
+        print("error has occurred")
+        print(e)    # log to logstream on azure 
+        result = "connection with ensemble timed out, but the module is working. thats the point."
 
     return render_template('database_test.html',
                            nav=nav,
