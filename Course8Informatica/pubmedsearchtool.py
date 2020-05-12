@@ -2,7 +2,6 @@ from Bio import Entrez, Medline
 Entrez.email = 'A.N.Other@example.com'
 
 def run_querry(querry, method):
-    print(querry)
     handle = Entrez.esearch(db='pubmed',
                             sort='relevance',
                             retmax='10000',
@@ -12,11 +11,9 @@ def run_querry(querry, method):
     idlist = record["IdList"]
 
     if method == "ids":
-        print(idlist)
         return idlist
 
     if method == "amount":
-        print(len(idlist))
         return len(idlist)
 
     if method == "abstract":
@@ -42,13 +39,13 @@ def create_collapsible(results):
                   '<div class="content">' \
                   '<p>{}</p>' \
                   '<p>{}</p>' \
-                  '<input type = "checkbox" class ="check">' \
+                  '<input type ="checkbox" id ="checkbox{}" class ="check">' \
                   '<b> Flag this data </b> </div>' \
                   '</div>'
 
     collapsibles = '<p><b>Results:</b></p>'
     for i in range(len(results)):
-        collapsibles += collapsible.format(results[i]["TI"], results[i]["AU"], results[i]["AB"]) + '</br>'
+        collapsibles += collapsible.format(results[i]["TI"], results[i]["AU"], results[i]["AB"], i) + '</br>'
 
     return collapsibles
 
@@ -62,7 +59,6 @@ def create_table(results):
             " </tr>"
 
     formatted_table = table
-    print(results)
     for i in range(len(results)):
         formatted_table += "<tr bgcolor='#f1f1f1'>"
         formatted_table += "<td>" + str(results[i]["TI"]) + "</td>"

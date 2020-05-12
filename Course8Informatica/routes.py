@@ -32,6 +32,9 @@ def search_test():
         results = ps.run_querry(search_term, 'abstract')
         collapsibles = ps.create_collapsible(results)
         table = ps.create_table(results)
+        for i in range(len(results)):
+            if request.args.get("checkbox" + str(i), "") == "on":
+                print(results[i]["TI"])
     # return render_template('search.html')
     return render_template('search.html',
                            description=collapsibles)
