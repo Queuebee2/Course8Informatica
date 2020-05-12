@@ -1,14 +1,4 @@
 
-        <!--<head>This tool searches the <b>pubmed</b>-->
-        <!--database.</br></br></head>-->
-        <!--<p>Results found ():</br> {}-->
-
-<!--{% block content %}-->
-    <!--<div class="container">-->
-        <!--<p>{{description}}</p>-->
-    <!--</div>-->
-<!--{% endblock %}-->
-
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -39,9 +29,19 @@
 </head>
 <body>
 <form method="GET">
-    <input type="submit" value="Blast">
+    <input name="search">
+        <input type="submit" value="Search">
+    <input type="submit" name="flag" value="Flag">
 
-<p><b>Results:</b></p><button type="button" class="collapsible">De Novo and Inherited Pathogenic Variants in KDM3B Cause Intellectual Disability, Short Stature, and Facial Dysmorphism.</button><div class="content"><p>['Diets IJ', 'van der Donk R', 'Baltrunaite K', 'Waanders E', 'Reijnders MRF', 'Dingemans AJM', 'Pfundt R', 'Vulto-van Silfhout AT', 'Wiel L', 'Gilissen C', 'Thevenon J', 'Perrin L', 'Afenjar A', 'Nava C', 'Keren B', 'Bartz S', 'Peri B', 'Beunders G', 'Verbeek N', 'van Gassen K', 'Thiffault I', 'Cadieux-Dion M', 'Huerta-Saenz L', 'Wagner M', 'Konstantopoulou V', 'Vodopiutz J', 'Griese M', 'Boel A', 'Callewaert B', 'Brunner HG', 'Kleefstra T', 'Hoogerbrugge N', 'de Vries BBA', 'Hwa V', 'Dauber A', 'Hehir-Kwa JY', 'Kuiper RP', 'Jongmans MCJ']</p><p>By using exome sequencing and a gene matching approach, we identified de novo and inherited pathogenic variants in KDM3B in 14 unrelated individuals and three affected parents with varying degrees of intellectual disability (ID) or developmental delay (DD) and short stature. The individuals share additional phenotypic features that include feeding difficulties in infancy, joint hypermobility, and characteristic facial features such as a wide mouth, a pointed chin, long ears, and a low columella. Notably, two individuals developed cancer, acute myeloid leukemia and Hodgkin lymphoma, in childhood. KDM3B encodes for a histone demethylase and is involved in H3K9 demethylation, a crucial part of chromatin modification required for transcriptional regulation. We identified missense and truncating variants, suggesting that KDM3B haploinsufficiency is the underlying mechanism for this syndrome. By using a hybrid facial-recognition model, we show that individuals with a pathogenic variant in KDM3B have a facial gestalt, and that they show significant facial similarity compared to control individuals with ID. In conclusion, pathogenic variants in KDM3B cause a syndrome characterized by ID, short stature, and facial dysmorphism.</p><input type = "checkbox" name ="checkbox0" class ="check"><b> Flag this data </b> </div></div></br><button type="button" class="collapsible">Linkage and exome analysis implicate multiple genes in non-syndromic intellectual disability in a large Swedish family.</button><div class="content"><p>['Lindholm Carlstrom E', 'Halvardson J', 'Etemadikhah M', 'Wetterberg L', 'Gustavson KH', 'Feuk L']</p><p>BACKGROUND: Non-syndromic intellectual disability is genetically heterogeneous with dominant, recessive and complex forms of inheritance. We have performed detailed genetic studies in a large multi-generational Swedish family, including several members diagnosed with non-syndromic intellectual disability. Linkage analysis was performed on 22 family members, nine affected with mild to moderate intellectual disability and 13 unaffected family members. METHODS: Family members were analyzed with Affymetrix Genome-Wide Human SNP Array 6.0 and the genetic data was used to detect copy number variation and to perform genome wide linkage analysis with the SNP High Throughput Linkage analysis system and the Merlin software. For the exome sequencing, the samples were prepared using the Sure Select Human All Exon Kit (Agilent Technologies, Santa Clara, CA, USA) and sequenced using the Ion Proton System. Validation of identified variants was performed with Sanger sequencing. RESULTS: The linkage analysis results indicate that intellectual disability in this family is genetically heterogeneous, with suggestive linkage found on chromosomes 1q31-q41, 4q32-q35, 6p25 and 14q24-q31 (LOD scores of 2.4, simulated p-value of 0.000003 and a simulated genome-wide p-value of 0.06). Exome sequencing was then performed in 14 family members and 7 unrelated individuals from the same region. The analysis of coding variation revealed a pathogenic and candidate variants in different branches of the family. In three patients we find a known homozygous pathogenic mutation in the Homo sapiens solute carrier family 17 member 5 (SLC17A5), causing Salla disease. We also identify a deletion overlapping KDM3B and a duplication overlapping MAP3K4 and AGPAT4, both overlapping variants previously reported in developmental disorders. CONCLUSIONS: DNA samples from the large family analyzed in this study were initially collected based on a hypothesis that affected members shared a major genetic risk factor. Our results show that a complex phenotype such as mild intellectual disability in large families from genetically isolated populations may show considerable genetic heterogeneity.</p><input type = "checkbox" name ="checkbox1" class ="check"><b> Flag this data </b> </div></div></br>
+    <p><b>Results:</b></p>
+
+    {% block content %}
+    <div class="container">
+        {{description}}
+    </div>
+{% endblock %}
+
+
 
     </form>
 <script>

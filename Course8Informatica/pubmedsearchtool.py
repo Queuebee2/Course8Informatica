@@ -39,13 +39,17 @@ def create_collapsible(results):
                   '<div class="content">' \
                   '<p>{}</p>' \
                   '<p>{}</p>' \
-                  '<input type ="checkbox" id ="checkbox{}" class ="check">' \
+                  '<input type ="checkbox" name="checkbox{}" class ="check">' \
                   '<b> Flag this data </b> </div>' \
                   '</div>'
 
-    collapsibles = '<p><b>Results:</b></p>'
+    collapsibles = ''
     for i in range(len(results)):
-        collapsibles += collapsible.format(results[i]["TI"], results[i]["AU"], results[i]["AB"], i) + '</br>'
+        try:
+            collapsibles += collapsible.format(results[i]["TI"], results[i]["AU"], results[i]["AB"], i) + '</br>'
+        except KeyError:
+            collapsibles += '<button type="button" class="collapsible">' \
+                  'NO RESULTS</button>' \
 
     return collapsibles
 
@@ -61,10 +65,19 @@ def create_table(results):
     formatted_table = table
     for i in range(len(results)):
         formatted_table += "<tr bgcolor='#f1f1f1'>"
-        formatted_table += "<td>" + str(results[i]["TI"]) + "</td>"
-        formatted_table += "<td>" + str(results[i]["AU"]) + "</td>"
-        formatted_table += "<td>" + str(results[i]["AB"]) + "</td>"
-        formatted_table += "</tr>"
+        try:
+            formatted_table += "<td>" + str(results[i]["TI"]) + "</td>"
+            try:
+                formatted_table += "<td>" + str(results[i]["AU"]) + "</td>"
+            except KeyError:
+                formatted_table += "<td>" + "NO AUTHORS AVAILABLE" + "</td>"
+            try:
+                formatted_table += "<td>" + str(results[i]["AB"]) + "</td>"
+            except KeyError:
+                formatted_table += "<td>" + "NO ABSTRACT AVAILABLE" + "</td>"
+        except KeyError:
+            formatted_table += "<td>" + "NO RESULTS" + "</td>"
+            formatted_table += "</tr>"
     formatted_table += "</table>"
     return formatted_table
 
