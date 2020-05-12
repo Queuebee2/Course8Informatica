@@ -27,14 +27,23 @@ def database():
 @app.route('/search', methods=['GET', 'POST'])
 def search_test():
     "Search page"
-    search_term = '((variant [tiab] OR variants [tiab] OR mutation [tiab] OR mutations [tiab] OR substitutions [tiab] OR substitution [tiab] ) AND ("loss of function" [tiab] OR "loss-of-function" [tiab] OR "haplo-insufficiency" [tiab] OR haploinsufficiency [tiab] OR "bi-allelic" [tiab] OR "biallelic" [tiab] OR recessive [tiab] OR homozygous [tiab] OR heterozygous [tiab] OR "de novo" [tiab] OR dominant [tiab] OR " X-linked" [tiab]) AND ("intellectual" [tiab] OR "mental retardation" [tiab] OR "cognitive" [tiab] OR "developmental" [tiab] OR "neurodevelopmental" [tiab]) AND “last 2 years”[dp] AND KDM3B) '
+    # search_term = '((variant [tiab] OR variants [tiab] OR mutation [tiab] OR mutations [tiab] OR substitutions [tiab] OR substitution [tiab] ) AND ("loss of function" [tiab] OR "loss-of-function" [tiab] OR "haplo-insufficiency" [tiab] OR haploinsufficiency [tiab] OR "bi-allelic" [tiab] OR "biallelic" [tiab] OR recessive [tiab] OR homozygous [tiab] OR heterozygous [tiab] OR "de novo" [tiab] OR dominant [tiab] OR " X-linked" [tiab]) AND ("intellectual" [tiab] OR "mental retardation" [tiab] OR "cognitive" [tiab] OR "developmental" [tiab] OR "neurodevelopmental" [tiab]) AND “last 2 years”[dp] AND KDM3B) '
+    collapsibles = ""
+    search_term = request.args.get("search", "")
+    flagged = request.args.get("flag", "")
+    print(request.args.get("flag", ""))
+
+    results = ""
+
+    for i in range(10):
+        if request.args.get("checkbox" + str(i), "") == "on":
+            print(i)
+            # print(results[i]["TI"])
+
     if search_term != "":
         results = ps.run_querry(search_term, 'abstract')
         collapsibles = ps.create_collapsible(results)
         table = ps.create_table(results)
-        for i in range(len(results)):
-            if request.args.get("checkbox" + str(i), "") == "on":
-                print(results[i]["TI"])
     # return render_template('search.html')
     return render_template('search.html',
                            description=collapsibles)
