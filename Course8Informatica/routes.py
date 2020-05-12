@@ -1,7 +1,7 @@
 """Route declaration."""
 from flask import current_app as app
 from flask import render_template
-from flask import request
+from flask import request, Markup
 from Course8Informatica import pubmedsearchtool as ps
 
 
@@ -46,7 +46,7 @@ def search_test():
         table = ps.create_table(results)
     # return render_template('search.html')
     return render_template('search.html',
-                           description=collapsibles)
+                           description=Markup(collapsibles))
 @app.route('/crash_the_server')
 def server_error_test():
     abort(500, "success")

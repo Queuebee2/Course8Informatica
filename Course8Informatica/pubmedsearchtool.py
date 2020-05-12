@@ -43,13 +43,15 @@ def create_collapsible(results):
                   '<b> Flag this data </b> </div>' \
                   '</div>'
 
-    collapsibles = ''
+    collapsibles = '<html>'
     for i in range(len(results)):
         try:
             collapsibles += collapsible.format(results[i]["TI"], results[i]["AU"], results[i]["AB"], i) + '</br>'
         except KeyError:
             collapsibles += '<button type="button" class="collapsible">' \
                   'NO RESULTS</button>' \
+
+    collapsibles += '</html>'
 
     return collapsibles
 
