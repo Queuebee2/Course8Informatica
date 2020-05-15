@@ -1,5 +1,6 @@
 from Bio import Entrez, Medline
 Entrez.email = 'A.N.Other@example.com'
+Entrez.api_key = "4bcbe73b19b2c6ca3c473e48a056f5dab709 "
 
 def run_querry(querry, method):
     handle = Entrez.esearch(db='pubmed',
