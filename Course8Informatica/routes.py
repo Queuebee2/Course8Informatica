@@ -3,6 +3,7 @@ from flask import current_app as app
 from flask import render_template
 from flask import request, Markup
 from Course8Informatica import pubmedsearchtool as ps
+from Course8Informatica import gene_retriever as gr
 
 
 from flask import abort
@@ -44,6 +45,7 @@ def search_test():
         results = ps.run_querry(search_term, 'abstract')
         collapsibles = ps.create_collapsible(results)
         table = ps.create_table(results)
+        collapsibles = gr.mark_genes(collapsibles)
     # return render_template('search.html')
     return render_template('search.html',
                            description=Markup(collapsibles))
