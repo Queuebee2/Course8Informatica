@@ -28,16 +28,18 @@
 </style>
 </head>
 <body>
-<form method="GET">
+<form method="POST">
     <input name="search">
         <input type="submit" value="Search">
-    <input type="submit" name="flag" value="Flag">
+    <input type ="checkbox" name="checkboxtest" class ="check">
+    <input type="submit" name="mark" value="Mark">
+    <input type="submit" name="export" value="Export data" />
+</form>
 
     <p><b>Results:</b></p>
 
 {{description}}
 
-    </form>
 <script>
 var coll = document.getElementsByClassName("collapsible");
 var i;

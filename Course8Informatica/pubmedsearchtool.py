@@ -41,17 +41,26 @@ def create_collapsible(results):
                   '<div class="content">' \
                   '<p>{}</p>' \
                   '<p>{}</p>' \
-                  '<input type ="checkbox" name="checkbox{}" class ="check">' \
-                  '<b> Flag this data </b> </div>' \
+                  '<input type ="checkbox" name="checkbox" id="{}" class ="check">' \
+                  '<b> Mark this data </b> </div>' \
                   '</div>'
 
     collapsibles = '<html>'
     for i in range(len(results)):
         try:
-            collapsibles += collapsible.format(results[i]["TI"], results[i]["AU"], results[i]["AB"], i) + '</br>'
+            x = results[i]["TI"]
         except KeyError:
-            collapsibles += '<button type="button" class="collapsible">' \
-                  'NO RESULTS</button>' \
+            results[i]["TI"] = "No title available"
+        try:
+            x = results[i]["AU"]
+        except KeyError:
+            results[i]["AU"] = "No author(s) available"
+        try:
+            x = results[i]["AB"]
+        except KeyError:
+            results[i]["AB"] = "No abstract available"
+
+        collapsibles += collapsible.format(results[i]["TI"], results[i]["AU"], results[i]["AB"], i) + '</br>'
 
     collapsibles += '</html>'
 
