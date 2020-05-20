@@ -1,3 +1,4 @@
+from flask import Markup
 from Bio import Entrez, Medline
 Entrez.email = 'A.N.Other@example.com'
 Entrez.api_key = "4bcbe73b19b2c6ca3c473e48a056f5dab709"
@@ -45,7 +46,7 @@ def create_collapsible(results):
                   '<b> Mark this data </b> </div>' \
                   '</div>'
 
-    collapsibles = '<html>'
+    collapsible_data = []
     for i in range(len(results)):
         try:
             x = results[i]["TI"]
@@ -60,11 +61,13 @@ def create_collapsible(results):
         except KeyError:
             results[i]["AB"] = "No abstract available"
 
-        collapsibles += collapsible.format(results[i]["TI"], results[i]["AU"], results[i]["AB"], i) + '</br>'
+        collapsible_data.append([])
+        collapsible_data[i].append(results[i]["TI"])
+        collapsible_data[i].append(results[i]["AU"])
+        collapsible_data[i].append(results[i]["AB"])
+        collapsible_data[i].append(i)
 
-    collapsibles += '</html>'
-
-    return collapsibles
+    return collapsible_data
 
 
 def create_table(results):
