@@ -1,7 +1,7 @@
 """Route declaration."""
 from flask import current_app as app
 from flask import render_template
-from flask import request, Response, session
+from flask import request, Response
 from Course8Informatica import pubmedsearchtool as ps
 from Course8Informatica import gene_retriever as gr
 
@@ -64,7 +64,7 @@ def search_test():
         results = ps.run_querry(search_term, 'abstract')
         collapsible_data = ps.create_collapsible(results)
         table = ps.create_table(results)
-        # collapsibles = gr.mark_genes(collapsibles)
+        collapsible_data = gr.find_genes(collapsible_data)
     return render_template('search.html',
                                results=collapsible_data)
 

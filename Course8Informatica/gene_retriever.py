@@ -1,4 +1,5 @@
 import re
+from flask import Markup
 from Course8Informatica import file_reader as fr
 
 excludeList = ['DNA', 'RNA', 'SNP', 'PCR', 'RARE', 'LOD', 'USA']
@@ -11,6 +12,16 @@ abbreviationList = fr.read_disease_abbreviation_file()
 heritanceList = fr.read_genepanel_file('heritance_list')
 
 joinedExcludeList = excludeList + US_states + abbreviationList + heritanceList
+
+
+def find_genes(text):
+    if isinstance(text, list):
+        for data in text:
+            data[0] = Markup(mark_genes(data[0]))
+            data[2] = Markup(mark_genes(data[2]))
+
+    return text
+
 
 def mark_genes(text):
     extra_index = 0
