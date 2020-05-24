@@ -43,4 +43,7 @@ def read_genepanel_file(method):
     if method == "heritance_list":
         return list(heritanceDict.keys())
 
+    if method == "symbols":
+        return symbols
+
 read_disease_abbreviation_file()

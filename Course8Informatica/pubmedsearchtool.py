@@ -30,6 +30,7 @@ def run_querry(querry, method):
                 dataList[counter]["TI"] = record["TI"]
                 dataList[counter]["AU"] = record["AU"]
                 dataList[counter]["AB"] = record["AB"]
+                dataList[counter]["PMID"] = record["PMID"]
             except KeyError:
                 print("No Title, Authors or Abstract found!\n")
             counter += 1
@@ -37,21 +38,16 @@ def run_querry(querry, method):
 
 
 def create_collapsible(results):
-    collapsible = '<button type="button" class="collapsible">' \
-                  '{}</button>' \
-                  '<div class="content">' \
-                  '<p>{}</p>' \
-                  '<p>{}</p>' \
-                  '<input type ="checkbox" name="checkbox" id="{}" class ="check">' \
-                  '<b> Mark this data </b> </div>' \
-                  '</div>'
-
     collapsible_data = []
     for i in range(len(results)):
         try:
             x = results[i]["TI"]
         except KeyError:
             results[i]["TI"] = "No title available"
+        try:
+            x = results[i]["PMID"]
+        except KeyError:
+            results[i]["PMID"] = "No pubmed identifier available"
         try:
             x = results[i]["AU"]
         except KeyError:
@@ -65,35 +61,36 @@ def create_collapsible(results):
         collapsible_data[i].append(results[i]["TI"])
         collapsible_data[i].append(results[i]["AU"])
         collapsible_data[i].append(results[i]["AB"])
+        collapsible_data[i].append(results[i]["PMID"])
         collapsible_data[i].append(i)
 
     return collapsible_data
 
-
-def create_table(results):
-    table = "<table>" \
-            "<tr bgcolor='#f44336'>" \
-            "<th>Title</th>" \
-            "<th>Author</th>" \
-            "<th>Abstract</th>" \
-            " </tr>"
-
-    formatted_table = table
-    for i in range(len(results)):
-        formatted_table += "<tr bgcolor='#f1f1f1'>"
-        try:
-            formatted_table += "<td>" + str(results[i]["TI"]) + "</td>"
-            try:
-                formatted_table += "<td>" + str(results[i]["AU"]) + "</td>"
-            except KeyError:
-                formatted_table += "<td>" + "NO AUTHORS AVAILABLE" + "</td>"
-            try:
-                formatted_table += "<td>" + str(results[i]["AB"]) + "</td>"
-            except KeyError:
-                formatted_table += "<td>" + "NO ABSTRACT AVAILABLE" + "</td>"
-        except KeyError:
-            formatted_table += "<td>" + "NO RESULTS" + "</td>"
-            formatted_table += "</tr>"
-    formatted_table += "</table>"
-    return formatted_table
+#
+# def create_table(results):
+#     table = "<table>" \
+#             "<tr bgcolor='#f44336'>" \
+#             "<th>Title</th>" \
+#             "<th>Author</th>" \
+#             "<th>Abstract</th>" \
+#             " </tr>"
+#
+#     formatted_table = table
+#     for i in range(len(results)):
+#         formatted_table += "<tr bgcolor='#f1f1f1'>"
+#         try:
+#             formatted_table += "<td>" + str(results[i]["TI"]) + "</td>"
+#             try:
+#                 formatted_table += "<td>" + str(results[i]["AU"]) + "</td>"
+#             except KeyError:
+#                 formatted_table += "<td>" + "NO AUTHORS AVAILABLE" + "</td>"
+#             try:
+#                 formatted_table += "<td>" + str(results[i]["AB"]) + "</td>"
+#             except KeyError:
+#                 formatted_table += "<td>" + "NO ABSTRACT AVAILABLE" + "</td>"
+#         except KeyError:
+#             formatted_table += "<td>" + "NO RESULTS" + "</td>"
+#             formatted_table += "</tr>"
+#     formatted_table += "</table>"
+#     return formatted_table
 
