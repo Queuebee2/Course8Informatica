@@ -1,13 +1,16 @@
 """Route declaration."""
+import re
+
 from flask import current_app as app
 from flask import render_template
-from flask import request, Response
+from flask import request, Response, after_this_request
 from Course8Informatica import pubmedsearchtool as ps
 from Course8Informatica import gene_retriever as gr
-
+from Course8Informatica import csv_formatter as cf
 
 from flask import abort
 
+requestdata = ""
 
 @app.route('/')
 def home():
@@ -28,31 +31,32 @@ def database():
 @app.route('/search', methods=['GET', 'POST'])
 def search_test():
     "Search page"
+
+    global requestdata, genesDict
+
     # search_term = '((variant [tiab] OR variants [tiab] OR mutation [tiab] OR mutations [tiab] OR substitutions [tiab] OR substitution [tiab] ) AND ("loss of function" [tiab] OR "loss-of-function" [tiab] OR "haplo-insufficiency" [tiab] OR haploinsufficiency [tiab] OR "bi-allelic" [tiab] OR "biallelic" [tiab] OR recessive [tiab] OR homozygous [tiab] OR heterozygous [tiab] OR "de novo" [tiab] OR dominant [tiab] OR " X-linked" [tiab]) AND ("intellectual" [tiab] OR "mental retardation" [tiab] OR "cognitive" [tiab] OR "developmental" [tiab] OR "neurodevelopmental" [tiab]) AND “last 2 years”[dp] AND KDM3B) '
     search_term = request.form.get("search", "")
     marked = request.form.get("mark", "")
     export = request.form.get("export", "")
 
-    if 'collapsible_data' not in locals():
-        collapsible_data = ""
+    collapsible_data = requestdata
+    print(requestdata)
 
     if request.method == 'POST':
         if export == 'Export data':
             print(request.form.getlist("checkbox"))
-            content = ""
+            content = "PMID;Gene(s);Title\n"
             for i in range(len(collapsible_data)):
                 if request.form.get("checkbox{}".format(i), "") == "on":
-                    print(i)
-                    try:
-                        content += "{}".format(i)
-                        content += collapsible_data[i][0]
-                    except KeyError:
-                        pass
+                    PMID = collapsible_data[i][3]
+                    genes = gr.find_genes(collapsible_data[i])
+                    title = collapsible_data[i][0]
+                    content += cf.format_csv_data(PMID, genes, title) + '\n'
             return Response(
                 content,
                 mimetype="text/csv",
                 headers={"Content-disposition":
-                             "attachment; filename=db.csv"})
+                             "attachment; filename=gene_results.csv"})
 
         if marked == 'Mark':
             print("Mark")
@@ -63,10 +67,11 @@ def search_test():
     if search_term != "":
         results = ps.run_querry(search_term, 'abstract')
         collapsible_data = ps.create_collapsible(results)
-        table = ps.create_table(results)
-        collapsible_data = gr.find_genes(collapsible_data)
+        collapsible_data_html = gr.find_genes(collapsible_data)
+        requestdata = collapsible_data
     return render_template('search.html',
-                               results=collapsible_data)
+                               results=collapsible_data_html)
+
 
 @app.route('/crash_the_server')
 def server_error_test():

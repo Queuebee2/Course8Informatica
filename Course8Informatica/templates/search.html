@@ -35,11 +35,12 @@
     <input type="submit" name="export" value="Export data" />
 
     {% for result in results %}
-    <button type="button" class="collapsible">{{ result[0] }}</button>
+    <button type="button" class="collapsible">{{ result[0] }} (ID: {{ result[3] }})</button>
     <div class="content">
         <p>{{ result[1] }}</p>
         <p>{{ result[2] }}</p>
-        <input type ="checkbox" name="checkbox{{ result[3] }}" class ="check">
+        <p><a href="https://pubmed.ncbi.nlm.nih.gov/{{ result[3] }}">PubMed link</a></p>
+        <input type ="checkbox" name="checkbox{{ result[4] }}" class ="check">
         <b> Mark this data </b> </div>
                   </div>
 {% endfor %}
