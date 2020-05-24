@@ -32,11 +32,13 @@ def database():
 def search_test():
     "Search page"
 
-    global requestdata, genesDict
+    global requestdata
 
     # search_term = '((variant [tiab] OR variants [tiab] OR mutation [tiab] OR mutations [tiab] OR substitutions [tiab] OR substitution [tiab] ) AND ("loss of function" [tiab] OR "loss-of-function" [tiab] OR "haplo-insufficiency" [tiab] OR haploinsufficiency [tiab] OR "bi-allelic" [tiab] OR "biallelic" [tiab] OR recessive [tiab] OR homozygous [tiab] OR heterozygous [tiab] OR "de novo" [tiab] OR dominant [tiab] OR " X-linked" [tiab]) AND ("intellectual" [tiab] OR "mental retardation" [tiab] OR "cognitive" [tiab] OR "developmental" [tiab] OR "neurodevelopmental" [tiab]) AND “last 2 years”[dp] AND KDM3B) '
     search_term = request.form.get("search", "")
     marked = request.form.get("mark", "")
+    markall = request.form.get("mark-all", "")
+    unmarkall = request.form.get("unmark-all", "")
     export = request.form.get("export", "")
 
     collapsible_data = requestdata
@@ -51,7 +53,8 @@ def search_test():
                     PMID = collapsible_data[i][3]
                     genes = gr.find_genes(collapsible_data[i])
                     title = collapsible_data[i][0]
-                    content += cf.format_csv_data(PMID, genes, title) + '\n'
+                    content += cf.format_csv_data(PMID, genes,
+                                                  title) + '\n'
             return Response(
                 content,
                 mimetype="text/csv",
@@ -67,10 +70,10 @@ def search_test():
     if search_term != "":
         results = ps.run_querry(search_term, 'abstract')
         collapsible_data = ps.create_collapsible(results)
-        collapsible_data_html = gr.find_genes(collapsible_data)
+        collapsible_data = gr.find_genes(collapsible_data)
         requestdata = collapsible_data
     return render_template('search.html',
-                               results=collapsible_data_html)
+                           results=collapsible_data)
 
 
 @app.route('/crash_the_server')
