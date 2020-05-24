@@ -2,7 +2,7 @@ import re
 from flask import Markup
 from Course8Informatica import file_reader as fr
 
-excludeList = ['DNA', 'RNA', 'SNP', 'PCR', 'RARE', 'LOD', 'USA']
+excludeList = ['DNA', 'RNA', 'SNP', 'PCR', 'RARE', 'LOD', 'USA', 'HCC', 'CIN']
 US_states = ["AL", "AK", "AZ", "AR", "CA", "CO", "CT", "DC", "DE", "FL", "GA",
           "HI", "ID", "IL", "IN", "IA", "KS", "KY", "LA", "ME", "MD",
           "MA", "MI", "MN", "MS", "MO", "MT", "NE", "NV", "NH", "NJ",
@@ -37,7 +37,7 @@ def find_genes(text):
 
 def mark_genes(text):
     extra_index = 0
-    for match in re.finditer(r'( |\()([A-Z]([A-Z]|[0-9]|-)+)( |\)|,)', text):
+    for match in re.finditer(r'( |\()([A-Z]([A-Z]|[0-9]|-){2,})( |\)|,)', text):
         s = match.start()
         e = match.end()
         match_text = text[s+extra_index:e+extra_index]

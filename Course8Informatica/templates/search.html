@@ -33,6 +33,11 @@
         <input type="submit" name="search" value="Search">
     <input type="submit" name="mark" value="Mark">
     <input type="submit" name="export" value="Export data" />
+    <br><br>
+    <input type="submit" name="mark-all" value="Mark all">
+    <input type="submit" name="unmark-all" value="Unmark all">
+    <br><br><br>
+
 
     {% for result in results %}
     <button type="button" class="collapsible">{{ result[0] }} (ID: {{ result[3] }})</button>
