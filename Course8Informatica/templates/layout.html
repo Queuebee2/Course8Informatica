@@ -1,0 +1,20 @@
+<!doctype html>
+<html>
+
+  <head>
+    <title>{{title}}</title>
+    <meta charset="utf-8">
+    <meta name="description" content={{description}}>
+    <link rel="shortcut icon" href="/favicon.ico">
+  </head>
+
+  <body>
+  Navbar:<br>
+    {% include 'navigation.html' %}<br>
+
+
+  Content:<br>
+    {% block content %}{% endblock %}<br>
+  </body>
+
+</html>

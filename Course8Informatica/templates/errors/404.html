@@ -1,0 +1,9 @@
+{% extends "layout.html" %}
+{% block title %}Page Not Found - error 404{% endblock %}
+{% block content %}
+  <h1>Page Not Found</h1>
+  <p>What you were looking for is just not there.
+
+{# todo: use relative jinja urling thingy instead of "/" {{ url_for('index') }}  #}
+  <p><a href="/">go somewhere nice</a>
+{% endblock %}
