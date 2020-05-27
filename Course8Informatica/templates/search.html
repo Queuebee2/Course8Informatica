@@ -31,22 +31,22 @@
 <form method="POST">
     <input name="search">
         <input type="submit" name="search" value="Search">
-    <input type="submit" name="mark" value="Mark">
+    <input type="submit" name="select" value="Select">
     <input type="submit" name="export" value="Export data" />
     <br><br>
-    <input type="submit" name="mark-all" value="Mark all">
-    <input type="submit" name="unmark-all" value="Unmark all">
+    <input type="submit" name="select-all" value="Select all">
+    <input type="submit" name="deselect-all" value="De-select all">
     <br><br><br>
 
 
     {% for result in results %}
-    <button type="button" class="collapsible">{{ result[0] }} (ID: {{ result[3] }})</button>
+    <button type="button" class="collapsible">
+        <input type ="checkbox" name="checkbox{{ result[4] }}" class ="check" {{ mark }}>
+        {{ result[0] }} (ID: {{ result[3] }}) </button>
     <div class="content">
         <p>{{ result[1] }}</p>
         <p>{{ result[2] }}</p>
-        <p><a href="https://pubmed.ncbi.nlm.nih.gov/{{ result[3] }}">PubMed link</a></p>
-        <input type ="checkbox" name="checkbox{{ result[4] }}" class ="check">
-        <b> Mark this data </b> </div>
+        <p><a href="https://pubmed.ncbi.nlm.nih.gov/{{ result[3] }}">PubMed link</a></p></div>
                   </div>
 {% endfor %}
 </form>

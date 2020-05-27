@@ -30,15 +30,13 @@ def database():
 
 @app.route('/search', methods=['GET', 'POST'])
 def search_test():
-    "Search page"
-
+    """"Search page"""
     global requestdata
 
-    # search_term = '((variant [tiab] OR variants [tiab] OR mutation [tiab] OR mutations [tiab] OR substitutions [tiab] OR substitution [tiab] ) AND ("loss of function" [tiab] OR "loss-of-function" [tiab] OR "haplo-insufficiency" [tiab] OR haploinsufficiency [tiab] OR "bi-allelic" [tiab] OR "biallelic" [tiab] OR recessive [tiab] OR homozygous [tiab] OR heterozygous [tiab] OR "de novo" [tiab] OR dominant [tiab] OR " X-linked" [tiab]) AND ("intellectual" [tiab] OR "mental retardation" [tiab] OR "cognitive" [tiab] OR "developmental" [tiab] OR "neurodevelopmental" [tiab]) AND “last 2 years”[dp] AND KDM3B) '
     search_term = request.form.get("search", "")
-    marked = request.form.get("mark", "")
-    markall = request.form.get("mark-all", "")
-    unmarkall = request.form.get("unmark-all", "")
+    marked = request.form.get("select", "")
+    selectall = request.form.get("select-all", "")
+    deselectall = request.form.get("deselect-all", "")
     export = request.form.get("export", "")
 
     collapsible_data = requestdata
@@ -61,11 +59,19 @@ def search_test():
                 headers={"Content-disposition":
                              "attachment; filename=gene_results.csv"})
 
-        if marked == 'Mark':
+        if marked == 'Select':
             print("Mark")
             for i in range(10):
                 if request.form.get("checkbox" + str(i), "") == "on":
                     print(i)
+
+        if selectall == "Select all":
+            return render_template('search.html',
+                           results=collapsible_data, mark="checked")
+
+        if deselectall == "De-select all":
+            return render_template('search.html',
+                           results=collapsible_data, mark="")
 
     if search_term != "":
         results = ps.run_querry(search_term, 'abstract')
