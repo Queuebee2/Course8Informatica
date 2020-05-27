@@ -3,7 +3,7 @@ import re
 
 from flask import current_app as app
 from flask import render_template
-from flask import request, Response, after_this_request
+from flask import request, Response
 from Course8Informatica import pubmedsearchtool as ps
 from Course8Informatica import gene_retriever as gr
 from Course8Informatica import csv_formatter as cf
@@ -38,9 +38,13 @@ def search_test():
     selectall = request.form.get("select-all", "")
     deselectall = request.form.get("deselect-all", "")
     export = request.form.get("export", "")
+    update = request.form.get("update", "")
 
     collapsible_data = requestdata
     print(requestdata)
+
+
+
 
     if request.method == 'POST':
         if export == 'Export data':

@@ -14,11 +14,10 @@ def read_disease_abbreviation_file():
     return abbreviationList
 
 
-def read_genepanel_file(method):
+def read_genepanel_file(method, filename="Course8Informatica/GenPanels_merged_DG-2.17.0.txt"):
     symbols = []
     genpanelsDict = {}
     heritanceDict = {}
-    filename = "Course8Informatica/GenPanels_merged_DG-2.17.0.txt"
 
     file = open(filename, "r")
     for line in file:
