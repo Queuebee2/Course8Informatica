@@ -1,32 +1,35 @@
 import re
 
 def read_disease_abbreviation_file():
-    abbreviationList = []
-    filename = "Course8Informatica/disease_abbreviations.txt"
+    from Course8Informatica.constants import abbrevations
+    # log : output saved as a list in a py file
 
-
-    with open(filename, 'r', encoding="utf-8") as file:
-        for line in file:
-            if line[:8] != 'Acronyms' and len(line) > 1:
-                line = line.strip()
-                symbols = line.split('\t')
-                symbol = symbols[0]
-                if len(symbol) > 1:
-                    if "/" in symbol:
-                        more_symbols = symbol.split("/")
-                        for s in more_symbols:
-                            abbreviationList.append(s)
-                    else:
-                        abbreviationList.append(symbol)
+    # abbreviationList = []
+    # filename = "Course8Informatica/disease_abbreviations.txt"
+    #
+    #
+    # with open(filename, 'r', encoding="utf-8") as file:
+    #     for line in file:
+    #         if line[:8] != 'Acronyms' and len(line) > 1:
+    #             line = line.strip()
+    #             symbols = line.split('\t')
+    #             symbol = symbols[0]
+    #             if len(symbol) > 1:
+    #                 if "/" in symbol:
+    #                     more_symbols = symbol.split("/")
+    #                     for s in more_symbols:
+    #                         abbreviationList.append(s)
+    #                 else:
+    #                     abbreviationList.append(symbol)
+    #
+    # print(abbreviationList)
 
     #  todo: run this only once, and just load a pre-formatted list of abbreviations
     # with open("abbrevations_only.txt", 'w') as out:
     #     for abbrev in abbreviationList:
     #         out.write(abbrev+"\n")
     #     print('done')
-
-
-    return abbreviationList
+    return abbrevations
 
 
 def read_genepanel_file(method, filename="Course8Informatica/GenPanels_merged_DG-2.17.0.txt"):
