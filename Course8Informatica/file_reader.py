@@ -4,13 +4,27 @@ def read_disease_abbreviation_file():
     abbreviationList = []
     filename = "Course8Informatica/disease_abbreviations.txt"
 
-    file = open(filename, "r")
-    for line in file:
-        decoded_line = line.decode('utf-8')
-        if decoded_line[:8] != 'Acronyms' and len(line) > 1:
-            decoded_line = decoded_line.strip()
-            values = decoded_line.split('\t')
-            abbreviationList.append(values[0])
+
+    with open(filename, 'r', encoding="utf-8") as file:
+        for line in file:
+            if line[:8] != 'Acronyms' and len(line) > 1:
+                line = line.strip()
+                symbols = line.split('\t')
+                symbol = symbols[0]
+                if len(symbol) > 1:
+                    if "/" in symbol:
+                        more_symbols = symbol.split("/")
+                        for s in more_symbols:
+                            abbreviationList.append(s)
+                    else:
+                        abbreviationList.append(symbol)
+
+    #  todo: run this only once, and just load a pre-formatted list of abbreviations
+    # with open("abbrevations_only.txt", 'w') as out:
+    #     for abbrev in abbreviationList:
+    #         out.write(abbrev+"\n")
+    #     print('done')
+
 
     return abbreviationList
 
