@@ -3,7 +3,6 @@ from .database_clasess import  EnsembleDbHandler
 
 ensemble_db = EnsembleDbHandler()
 
-
 def create_app():
     """Construct the core Course8Informatica."""
 
