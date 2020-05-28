@@ -6,10 +6,11 @@ def read_disease_abbreviation_file():
 
     file = open(filename, "r")
     for line in file:
-        if line[:8] != 'Acronyms' and len(line) > 1:
-            line.strip()
-            line = line.split('\t')
-            abbreviationList.append(line[0])
+        decoded_line = line.decode('utf-8')
+        if decoded_line[:8] != 'Acronyms' and len(line) > 1:
+            decoded_line = decoded_line.strip()
+            values = decoded_line.split('\t')
+            abbreviationList.append(values[0])
 
     return abbreviationList
 
