@@ -16,10 +16,8 @@ requestdata = ""
 def home():
     """Landing page."""
 
-    return render_template('home.html',
-                           title="Jinja Demo Site",
-                           description="Smarter page templates \
-                                with Flask & Jinja.")
+    return render_template('index.html')
+
 @app.route('/database')
 def database():
     """database test page."""
