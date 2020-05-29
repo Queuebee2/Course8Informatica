@@ -37,7 +37,7 @@ def find_genes(text):
 
 def mark_genes(text):
     extra_index = 0
-    for match in re.finditer(r'( |\()([A-Z]([A-Z]|[0-9]|-){2,})( |\)|,)', text):
+    for match in re.finditer(r'( |\()([A-Z]([A-Z]|[0-9]|-){2,})( |\)|,|\.)', text):
         s = match.start()
         e = match.end()
         match_text = text[s+extra_index:e+extra_index]
