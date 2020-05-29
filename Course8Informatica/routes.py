@@ -31,7 +31,10 @@ def search_test():
     """"Search page"""
     global requestdata
 
-    search_term = request.form.get("search", "")
+    search = ['', '', '']
+    search[0] = request.form.get("search1", "")
+    search[1] = request.form.get("search2", "")
+    search[2] = request.form.get("search3", "")
     marked = request.form.get("select", "")
     selectall = request.form.get("select-all", "")
     deselectall = request.form.get("deselect-all", "")
@@ -75,8 +78,8 @@ def search_test():
             return render_template('search.html',
                            results=collapsible_data, mark="")
 
-    if search_term != "":
-        results = ps.run_querry(search_term, 'abstract')
+    if search[0] or search[1] or search[2]:
+        results = ps.run_querry(search, 'abstract')
         collapsible_data = ps.create_collapsible(results)
         collapsible_data = gr.find_genes(collapsible_data)
         requestdata = collapsible_data
