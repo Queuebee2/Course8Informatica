@@ -4,7 +4,14 @@ Entrez.email = 'A.N.Other@example.com'
 Entrez.api_key = "4bcbe73b19b2c6ca3c473e48a056f5dab709"
 
 
-def run_querry(querry, method):
+def run_querry(search, method):
+    querry = ""
+    for term in search:
+        if term:
+            querry += term + " "
+    querry.strip()
+
+    print(querry)
     handle = Entrez.esearch(db='pubmed',
                             sort='relevance',
                             retmax='10000',

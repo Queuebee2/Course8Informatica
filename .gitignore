@@ -1,8 +1,14 @@
 venv/
 __pycache__/
+Course8Informatica/__pycache__/
+__pycache__/*
+
+
 .idea/
 
 *.log
 
 # test files
 tests/jsondumps/jsondump.json
+
+*.pyc

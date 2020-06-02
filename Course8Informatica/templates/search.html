@@ -1,19 +1,18 @@
 
 <html>
-<head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- All CSS -->
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700" rel="stylesheet" type= "text/css">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i" rel="stylesheet" type= "text/css">
-    <link href="{{ url_for('static',filename='css/bootstrap.css') }}" rel="stylesheet">
-    <link href="{{ url_for('static',filename='css/fontawesome-all.css') }}" rel="stylesheet">
-    <link href="{{ url_for('static',filename='css/swiper.css') }}" rel="stylesheet">
-	<!--<link href="{{ url_for('static',filename='css/styles.css') }}" rel="stylesheet">-->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i" rel="stylesheet">
+    <link href="../static/css/bootstrap.css" rel="stylesheet">
+    <link href="../static/css/fontawesome-all.css" rel="stylesheet">
+    <link href="../static/css/swiper.css" rel="stylesheet">
+	<link href="../static/css/styles.css" rel="stylesheet">
 
 <style>
 .collapsible {
-  background-color: #777;
-  color: white;
+  /*background-color: #777;*/
+  /*color: white;*/
   cursor: pointer;
   padding: 18px;
   width: 100%;
@@ -24,7 +23,7 @@
 }
 
 .active, .collapsible:hover {
-  background-color: #555;
+  /*background-color: #555;*/
 }
 
 .content {
@@ -33,34 +32,91 @@
   overflow: hidden;
   background-color: #f1f1f1;
 }
+
 </style>
-</head>
-<body>
+
+<head>
+<header id="header" class="header">
+        <!-- Preloader -->
+	<div class="spinner-wrapper">
+        <div class="spinner">
+            <div class="bounce1"></div>
+            <div class="bounce2"></div>
+            <div class="bounce3"></div>
+        </div>
+    </div>
+    <!-- end of preloader -->
+
+    <title>PubMole - Digging for molecular truths</title>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-md navbar-dark navbar-custom fixed-top">
+        <!-- Logo [website name] -->
+        <a class="navbar-brand logo-text page-scroll" href="/">PubMole</a>
+
+        <!-- Mobile Menu Button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-awesome fas fa-bars"></span>
+            <span class="navbar-toggler-awesome fas fa-times"></span>
+        </button>
+        <!-- end of mobile menu button -->
+
+        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="/#header">HOME <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="/#about">ABOUT</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="/#preview">STORED DATA</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="/search">SEARCH</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="/#contact">CONTACT</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- end of navbar -->
+
+        <!-- Header -->
+        <div class="header-content">
+        </div> <!-- end of header-content -->
+    <!-- end of header -->
+<body class="body-search">
 <form method="POST">
-    <input name="search">
-        <input type="submit" name="search" value="Search">
-    <input type="submit" name="select" value="Select">
-    <input type="submit" name="export" value="Export data" />
-    <input type="submit" name="update" value="Update GenePanel" />
+    <input name="search1" placeholder="Protein(s)..." class="form-control-input"><br>
+    <input name="search2" placeholder="Phenotype(s)..." class="form-control-input"><br>
+    <input name="search3" placeholder="Other..." class="form-control-input"><br>
+        <input type="submit" class="btn-solid-lg page-scroll" name="search1" value="Search">
     <br><br>
-    <input type="submit" name="select-all" value="Select all">
-    <input type="submit" name="deselect-all" value="De-select all">
+    <input type="submit" class="btn-solid-lg page-scroll" name="select" value="Select">
+    <input type="submit" class="btn-solid-lg page-scroll" name="export" value="Export data" />
+    <input type="submit" class="btn-solid-lg page-scroll" name="update" value="Update GenePanel" />
+    <br><br>
+    <input type="submit" class="btn-solid-lg page-scroll" name="select-all" value="Select all">
+    <input type="submit" class="btn-solid-lg page-scroll" name="deselect-all" value="De-select all">
     <br><br><br>
-
-
+<!--</form>-->
+</header>
+</head>
+<!--<form method="POST">-->
     {% for result in results %}
-    <button type="button" class="collapsible">
+    <button type="button" class="collapsible btn-solid-lg">
         <input type ="checkbox" name="checkbox{{ result[4] }}" class ="check" {{ mark }}>
         {{ result[0] }} (ID: {{ result[3] }}) </button>
     <div class="content">
-        <p>{{ result[1] }}</p>
-        <p>{{ result[2] }}</p>
-        <p><a href="https://pubmed.ncbi.nlm.nih.gov/{{ result[3] }}">PubMed link</a></p></div>
+        <p class="p-results"> {{ result[1] }}</p>
+        <p class="p-results"> {{ result[2] }}</p>
+        <p class="p-results-link"><a href="https://pubmed.ncbi.nlm.nih.gov/{{ result[3] }}" class="p-results-link">PubMed link</a></p></div>
                   </div>
 {% endfor %}
+
 </form>
-
-
 <script>
 var coll = document.getElementsByClassName("collapsible");
 var i;
@@ -78,4 +134,16 @@ for (i = 0; i < coll.length; i++) {
 }
 </script>
 
+
+    <!-- javascripts -->
+    <script src="../static/js/jquery.min.js"></script> <!-- jQuery for Bootstrap's JavaScript plugins -->
+    <script src="../static/js/popper.min.js"></script> <!-- Popper tooltip library for Bootstrap -->
+    <script src="../static/js/bootstrap.min.js"></script> <!-- Bootstrap framework -->
+    <script src="../static/js/jquery.easing.min.js"></script> <!-- jQuery Easing for smooth scrolling between anchors -->
+    <script src="../static/js/swiper.min.js"></script> <!-- Swiper for image and text sliders -->
+    <script src="../static/js/morphext.min.js"></script> <!-- Morphtext rotating text in the header -->
+    <script src="../static/js/validator.min.js"></script> <!-- Validator.js - Bootstrap plugin that validates forms -->
+    <script src="../static/js/scripts.js"></script> <!-- Custom scripts -->
+
 </body>
+</html>
