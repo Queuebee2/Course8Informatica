@@ -8,9 +8,13 @@ US_states = ["AL", "AK", "AZ", "AR", "CA", "CO", "CT", "DC", "DE", "FL", "GA",
           "MA", "MI", "MN", "MS", "MO", "MT", "NE", "NV", "NH", "NJ",
           "NM", "NY", "NC", "ND", "OH", "OK", "OR", "PA", "RI", "SC",
           "SD", "TN", "TX", "UT", "VT", "VA", "WA", "WV", "WI", "WY"]
+
+# TODO
+#  dit runt maar één keer, tijdens de import van dit bestand.
+#  maak er een class van of zorg dat het ge rerunt kan worden pls
 abbreviationList = fr.read_disease_abbreviation_file()
 heritanceList = fr.read_genepanel_file('heritance_list')
-symbols = fr.read_genepanel_file('symbols')
+symbols_in_current_genepanel = fr.read_genepanel_file('symbols')
 
 joinedExcludeList = excludeList + US_states + abbreviationList + heritanceList
 
@@ -46,7 +50,7 @@ def mark_genes(text):
 
 
         if if_state_text not in joinedExcludeList and not allCharSame(if_state_text):
-            if if_state_text in symbols:
+            if if_state_text in symbols_in_current_genepanel:
                 text = text[:s+extra_index] + '<span title="Mentioned in current GenePanel"><b>' + text[s+extra_index:e+extra_index] + '</b></span>' + text[e+extra_index:]
                 extra_index += 59
             else:
