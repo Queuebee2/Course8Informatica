@@ -88,6 +88,15 @@
         </div> <!-- end of header-content -->
     <!-- end of header -->
 <body class="body-search">
+
+
+      <form action = "/update_genepanel" method = "POST"
+         enctype = "multipart/form-data">
+         <input type="file" class="btn-solid-lg page-scroll" name="file" />
+        <input type="submit" class="btn-solid-lg page-scroll" name="update" value="Update GenePanel" />
+      </form>
+
+
 <form method="POST">
     <input name="search1" placeholder="Protein(s)..." class="form-control-input"><br>
     <input name="search2" placeholder="Phenotype(s)..." class="form-control-input"><br>
@@ -97,7 +106,7 @@
     <br><br>
     <input type="submit" class="btn-solid-lg page-scroll" name="select" value="Select">
     <input type="submit" class="btn-solid-lg page-scroll" name="export" value="Export data" />
-    <input type="submit" class="btn-solid-lg page-scroll" name="update" value="Update GenePanel" />
+
     <br><br>
     <input type="submit" class="btn-solid-lg page-scroll" name="select-all" value="Select all">
     <input type="submit" class="btn-solid-lg page-scroll" name="deselect-all" value="De-select all">
