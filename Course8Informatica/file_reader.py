@@ -1,38 +1,45 @@
 import re
-
-def read_disease_abbreviation_file():
-    from Course8Informatica.constants import abbrevations
-    # log : output saved as a list in a py file
-
-    # abbreviationList = []
-    # filename = "Course8Informatica/disease_abbreviations.txt"
-    #
-    #
-    # with open(filename, 'r', encoding="utf-8") as file:
-    #     for line in file:
-    #         if line[:8] != 'Acronyms' and len(line) > 1:
-    #             line = line.strip()
-    #             symbols = line.split('\t')
-    #             symbol = symbols[0]
-    #             if len(symbol) > 1:
-    #                 if "/" in symbol:
-    #                     more_symbols = symbol.split("/")
-    #                     for s in more_symbols:
-    #                         abbreviationList.append(s)
-    #                 else:
-    #                     abbreviationList.append(symbol)
-    #
-    # print(abbreviationList)
-
-    #  todo: run this only once, and just load a pre-formatted list of abbreviations
-    # with open("abbrevations_only.txt", 'w') as out:
-    #     for abbrev in abbreviationList:
-    #         out.write(abbrev+"\n")
-    #     print('done')
-    return abbrevations
+import xml.etree.ElementTree as ET
 
 
-def read_genepanel_file(method, filename="Course8Informatica/GenPanels_merged_DG-2.17.0.txt"):
+def read_gene_file():
+    symbols = {}
+
+    gene_file = "C:\\Users\\bartj\\Downloads\\human_genes.txt"
+
+    with open(gene_file, 'r', encoding="utf-8") as file:
+        for line in file:
+            line = line.split('\t')
+            regexp = re.compile(r'[0-9]')
+            if regexp.search(line[0][0]):
+                symbol = line[5]
+                symbols[symbol] = symbol
+                for alias in line[6].split(', '):
+                    symbols[alias] = symbol
+
+    return symbols
+
+
+def read_mesh_terms_file():
+    # retrieved from ftp://nlmpubs.nlm.nih.gov/online/mesh/MESH_FILES/xmlmesh/
+    mesh_dict = {}
+
+    xml_file = "C:\\Users\\bartj\\Downloads\\desc2020.xml"
+    root = ET.parse(xml_file).getroot()
+
+    for concept in root.findall('DescriptorRecord/ConceptList/Concept'):
+        conceptname = concept.find('ConceptName/String')
+        concept_desc = concept.find('ScopeNote')
+        concept_string = conceptname.text
+        if concept_desc is not None:
+            concept_string += ": " + concept_desc.text
+        for mesh in concept.findall('TermList/Term/String'):
+            mesh_dict[mesh.text.lower()] = concept_string.lower().strip()
+
+    return mesh_dict
+
+
+def read_genepanel_file(filename="Course8Informatica/GenPanels_merged_DG-2.17.0.txt"):
     symbols = []
     genpanelsDict = {}
     heritanceDict = {}
@@ -57,10 +64,4 @@ def read_genepanel_file(method, filename="Course8Informatica/GenPanels_merged_DG
                 except IndexError:
                     print(sym)
 
-    if method == "heritance_list":
-        return list(heritanceDict.keys())
-
-    if method == "symbols":
-        return symbols
-
-read_disease_abbreviation_file()
+    return list(heritanceDict.keys()), symbols

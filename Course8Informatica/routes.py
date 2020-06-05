@@ -3,7 +3,7 @@ import re
 
 from flask import current_app as app
 from flask import render_template
-from flask import request, Response
+from flask import request, Response, Markup
 from Course8Informatica import pubmedsearchtool as ps
 from Course8Informatica import gene_retriever as gr
 from Course8Informatica import csv_formatter as cf
@@ -42,10 +42,6 @@ def search_test():
     update = request.form.get("update", "")
 
     collapsible_data = requestdata
-    print(requestdata)
-
-
-
 
     if request.method == 'POST':
         if export == 'Export data':
@@ -82,6 +78,8 @@ def search_test():
         results = ps.run_querry(search, 'abstract')
         collapsible_data = ps.create_collapsible(results)
         collapsible_data = gr.find_genes(collapsible_data)
+        if request.form.get("checkbox_phenotype", "") == "on":
+            collapsible_data = gr.find_mesh_terms(collapsible_data)
         requestdata = collapsible_data
     return render_template('search.html',
                            results=collapsible_data)

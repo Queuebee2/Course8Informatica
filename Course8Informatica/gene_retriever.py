@@ -2,17 +2,55 @@ import re
 from flask import Markup
 from Course8Informatica import file_reader as fr
 
-excludeList = ['DNA', 'RNA', 'SNP', 'PCR', 'RARE', 'LOD', 'USA', 'HCC', 'CIN']
-US_states = ["AL", "AK", "AZ", "AR", "CA", "CO", "CT", "DC", "DE", "FL", "GA",
-          "HI", "ID", "IL", "IN", "IA", "KS", "KY", "LA", "ME", "MD",
-          "MA", "MI", "MN", "MS", "MO", "MT", "NE", "NV", "NH", "NJ",
-          "NM", "NY", "NC", "ND", "OH", "OK", "OR", "PA", "RI", "SC",
-          "SD", "TN", "TX", "UT", "VT", "VA", "WA", "WV", "WI", "WY"]
-abbreviationList = fr.read_disease_abbreviation_file()
-heritanceList = fr.read_genepanel_file('heritance_list')
-symbols = fr.read_genepanel_file('symbols')
+gene_dict = fr.read_gene_file()
+mesh_dict = fr.read_mesh_terms_file()
+heritance_list, symbols = fr.read_genepanel_file()
 
-joinedExcludeList = excludeList + US_states + abbreviationList + heritanceList
+joinedExcludeList = heritance_list
+
+
+def find_mesh_terms(text):
+    data_first_search = ""
+    for data in text:
+        data_first_search += data[0] + " " + data[2] + " "
+    search_dict = create_mesh_dict(data_first_search)
+    for data in text:
+        mesh1 = mark_mesh(data[0], search_dict)
+        mesh2 = mark_mesh(data[2], search_dict)
+        for mesh in mesh1:
+            if mesh not in mesh2:
+                mesh2.append(mesh)
+
+        mesh2_string = ""
+        for item in mesh2:
+            mesh2_string += item
+        data.append(mesh2_string)
+
+    return text
+
+
+def create_mesh_dict(text):
+    print(text)
+    search_dict = {}
+    # mesh_dict = {"reportedly": "test", "shows": "test", "both": "tessst"}
+    for key in mesh_dict:
+        regexp = re.compile(r'\b' + re.escape(str(key)) + r'\b', re.IGNORECASE)
+        if regexp.search(text):
+            print("1" + key)
+            search_dict[key] = mesh_dict[key]
+
+    return search_dict
+
+
+def mark_mesh(text, search_dict):
+    meshterms = []
+    for key in search_dict:
+        regexp = re.compile(r'\b' + re.escape(str(key)) + r'\b', re.IGNORECASE)
+        if regexp.search(text):
+            print(key)
+            meshterms.append(Markup('<span class="btn-solid-lg page-scroll" title="{}"><b>{}</b></span>'.format(search_dict[key], key)))
+
+    return meshterms
 
 
 def find_genes(text):
@@ -42,16 +80,14 @@ def mark_genes(text):
         e = match.end()
         match_text = text[s+extra_index:e+extra_index]
 
-        if_state_text = re.sub(r'\(|\)|,', '', match_text).strip()
+        if_state_text = re.sub(r'\(|\)|,|\.', '', match_text).strip()
 
-
-        if if_state_text not in joinedExcludeList and not allCharSame(if_state_text):
-            if if_state_text in symbols:
-                text = text[:s+extra_index] + '<span title="Mentioned in current GenePanel"><b>' + text[s+extra_index:e+extra_index] + '</b></span>' + text[e+extra_index:]
-                extra_index += 59
-            else:
-                text = text[:s+extra_index] + '<span title="Not mentioned in current GenePanel"><b>' + text[s+extra_index:e+extra_index] + '</b></span>' + text[e+extra_index:]
-                extra_index += 63
+        if if_state_text in symbols:
+            text = text[:s+extra_index] + '<span title="Mentioned in current GenePanel"><b>'+ text[s+extra_index:e+extra_index] + '</b></span>' + text[e+extra_index:]
+            extra_index += 59
+        elif if_state_text in gene_dict:
+            text = text[:s+extra_index] + '<span title="Not mentioned in current GenePanel ({})"><b>'.format(gene_dict[if_state_text]) + text[s+extra_index:e+extra_index] + '</b></span>' + text[e+extra_index:]
+            extra_index += 65 + len(gene_dict[if_state_text])
 
     return text
 

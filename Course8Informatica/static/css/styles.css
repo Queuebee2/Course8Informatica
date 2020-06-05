@@ -16,6 +16,12 @@ html {
 	height: 100%;
 }
 
+/* This is the span (mouse over)*/
+span {
+color:white;
+background: black;
+}
+
 /* text */
 body, p {
 	color: #f1f1f8;
@@ -23,6 +29,10 @@ body, p {
 }
 .p-results {
 	color: #141f1f;
+	font: 400 1rem/1.5rem "Open Sans", sans-serif;
+}
+.p-span {
+	color: #4d4dff;
 	font: 400 1rem/1.5rem "Open Sans", sans-serif;
 }
 .p-results-link {

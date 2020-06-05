@@ -73,31 +73,4 @@ def create_collapsible(results):
 
     return collapsible_data
 
-#
-# def create_table(results):
-#     table = "<table>" \
-#             "<tr bgcolor='#f44336'>" \
-#             "<th>Title</th>" \
-#             "<th>Author</th>" \
-#             "<th>Abstract</th>" \
-#             " </tr>"
-#
-#     formatted_table = table
-#     for i in range(len(results)):
-#         formatted_table += "<tr bgcolor='#f1f1f1'>"
-#         try:
-#             formatted_table += "<td>" + str(results[i]["TI"]) + "</td>"
-#             try:
-#                 formatted_table += "<td>" + str(results[i]["AU"]) + "</td>"
-#             except KeyError:
-#                 formatted_table += "<td>" + "NO AUTHORS AVAILABLE" + "</td>"
-#             try:
-#                 formatted_table += "<td>" + str(results[i]["AB"]) + "</td>"
-#             except KeyError:
-#                 formatted_table += "<td>" + "NO ABSTRACT AVAILABLE" + "</td>"
-#         except KeyError:
-#             formatted_table += "<td>" + "NO RESULTS" + "</td>"
-#             formatted_table += "</tr>"
-#     formatted_table += "</table>"
-#     return formatted_table
 
