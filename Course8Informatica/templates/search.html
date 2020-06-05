@@ -92,6 +92,7 @@
     <input name="search1" placeholder="Protein(s)..." class="form-control-input"><br>
     <input name="search2" placeholder="Phenotype(s)..." class="form-control-input"><br>
     <input name="search3" placeholder="Other..." class="form-control-input"><br>
+    <input type ="checkbox" name="checkbox_phenotype" class ="check" Also search and show phenotypes in text. >
         <input type="submit" class="btn-solid-lg page-scroll" name="search1" value="Search">
     <br><br>
     <input type="submit" class="btn-solid-lg page-scroll" name="select" value="Select">
@@ -112,7 +113,8 @@
     <div class="content">
         <p class="p-results"> {{ result[1] }}</p>
         <p class="p-results"> {{ result[2] }}</p>
-        <p class="p-results-link"><a href="https://pubmed.ncbi.nlm.nih.gov/{{ result[3] }}" class="p-results-link">PubMed link</a></p></div>
+        <p class="p-results-link"><a href="https://pubmed.ncbi.nlm.nih.gov/{{ result[3] }}" class="p-results-link">PubMed link</a></p>
+        <p class="p-results"> Mesh terms found: {{ result[5] }}</p></div>
                   </div>
 {% endfor %}
 
