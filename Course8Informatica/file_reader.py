@@ -23,7 +23,7 @@ def read_disease_abbreviation_file():
 def read_gene_file():
     symbols = {}
 
-    gene_file = "C:\\Users\\bartj\\Downloads\\human_genes.txt"
+    gene_file = "human_genes.txt"
 
     with open(gene_file, 'r', encoding="utf-8") as file:
         for line in file:
@@ -42,7 +42,7 @@ def read_mesh_terms_file():
     # retrieved from ftp://nlmpubs.nlm.nih.gov/online/mesh/MESH_FILES/xmlmesh/
     mesh_dict = {}
 
-    xml_file = "C:\\Users\\bartj\\Downloads\\desc2020.xml"
+    xml_file = "desc2020.xml"
     root = ET.parse(xml_file).getroot()
 
     for concept in root.findall('DescriptorRecord/ConceptList/Concept'):
