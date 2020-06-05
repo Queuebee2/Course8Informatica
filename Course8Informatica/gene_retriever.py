@@ -32,7 +32,7 @@ def find_mesh_terms(text):
 def create_mesh_dict(text):
     print(text)
     search_dict = {}
-    mesh_dict = {"reportedly": "test", "shows": "test", "both": "tessst"}
+    # mesh_dict = {"reportedly": "test", "shows": "test", "both": "tessst"}
     for key in mesh_dict:
         regexp = re.compile(r'\b' + re.escape(str(key)) + r'\b', re.IGNORECASE)
         if regexp.search(text):
