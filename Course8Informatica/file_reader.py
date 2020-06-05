@@ -43,8 +43,8 @@ def read_mesh_terms_file():
     # retrieved from ftp://nlmpubs.nlm.nih.gov/online/mesh/MESH_FILES/xmlmesh/
     mesh_dict = {}
 
-    xml_file = "desc2020.xml"
-    root = ET.parse(xml_file).getroot()
+    # xml_file = "desc2020.xml"
+    # root = ET.parse(xml_file).getroot()
 
     # for concept in root.findall('DescriptorRecord/ConceptList/Concept'):
     #     conceptname = concept.find('ConceptName/String')
