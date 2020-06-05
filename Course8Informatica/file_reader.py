@@ -1,7 +1,5 @@
 import re
-import xml.etree.ElementTree as ET
 import io
-
 
 
 # Filename had to be changable, so put it into a global for now
