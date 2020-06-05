@@ -1,5 +1,7 @@
 import re
 import xml.etree.ElementTree as ET
+import io
+
 
 
 # Filename had to be changable, so put it into a global for now
@@ -42,17 +44,28 @@ def read_mesh_terms_file():
     # retrieved from ftp://nlmpubs.nlm.nih.gov/online/mesh/MESH_FILES/xmlmesh/
     mesh_dict = {}
 
-    xml_file = "desc2020.xml"
-    root = ET.parse(xml_file).getroot()
+    # xml_file = "desc2020.xml"
+    # root = ET.parse(xml_file).getroot()
+    #
+    # for concept in root.findall('DescriptorRecord/ConceptList/Concept'):
+    #     conceptname = concept.find('ConceptName/String')
+    #     concept_desc = concept.find('ScopeNote')
+    #     concept_string = conceptname.text
+    #     if concept_desc is not None:
+    #         concept_string += ": " + concept_desc.text
+    #     for mesh in concept.findall('TermList/Term/String'):
+    #         mesh_dict[mesh.text.lower()] = concept_string.lower().strip()
+    #
+    #
+    # with io.open("mesh_terms.csv", "w", encoding="utf-8") as f:
+    #     for key, val in mesh_dict.items():
+    #         f.write(key + "\t" + val + "\n")
 
-    for concept in root.findall('DescriptorRecord/ConceptList/Concept'):
-        conceptname = concept.find('ConceptName/String')
-        concept_desc = concept.find('ScopeNote')
-        concept_string = conceptname.text
-        if concept_desc is not None:
-            concept_string += ": " + concept_desc.text
-        for mesh in concept.findall('TermList/Term/String'):
-            mesh_dict[mesh.text.lower()] = concept_string.lower().strip()
+    with io.open("mesh_terms.csv", "r", encoding="utf-8") as f:
+        for line in f:
+            line = line.strip("\n")
+            line = line.split('\t')
+            mesh_dict[line[0]] = line[1]
 
     return mesh_dict
 
