@@ -3,10 +3,12 @@ import re
 
 from flask import current_app as app
 from flask import render_template
-from flask import request, Response, Markup
+from flask import request, Response, redirect
 from Course8Informatica import pubmedsearchtool as ps
 from Course8Informatica import gene_retriever as gr
 from Course8Informatica import csv_formatter as cf
+from Course8Informatica.file_reader import test_is_filename_updated, update_filename, GENEPANEL_FILENAME
+from werkzeug.utils import secure_filename
 
 from flask import abort
 
@@ -24,6 +26,54 @@ def database():
     return render_template('database_test.html',
                            title="database page",
                            description="This is the database")
+
+
+@app.route('/update_genepanel', methods=['GET', 'POST'])
+def update():
+    if request.method == 'POST':
+        file = request.files['file']
+        if file:
+            print(f'saving {file.filename}')
+            
+            if file.filename == GENEPANEL_FILENAME:
+                print(f"user tried to upload duplicate of existing genepanel")
+                # todo return (append) warning / popup ...
+                # "If that's the newest genepanel, you're already up to date!"
+                # todo (actually compare the hash of both to be sure)
+                return  redirect("/search", code=302)
+
+            # todo validate the genepanel file
+            # if <some error> do something
+
+            file.save(secure_filename(file.filename))
+
+            # update the filename global (dirty hack -_-)
+            update_filename(file.filename)
+
+            # todo make sure genepanel contents are re-loaded!
+            #  (see gene_retriever)
+            print(f'filename updated to: {test_is_filename_updated()}')
+        else:
+            # todo return (append) warning / popup ...
+            # "You tried to update the genepanel but no file was chosen!"
+            print('no file selected')
+
+    # back to search page
+    return  redirect("/search", code=302)
+
+
+# if update == "Update GenePanel":
+#     print("testing update-gene panel button fired, nice.")
+#     if file_selected:
+#         print(f'user selected genepanel: {file_selected}')
+#         try:
+#             panel_file = request.files['file']
+#             print(dir(panel_file))
+#         except Exception as e:
+#             print(e)
+#             return Response("An error occurred during file upload")
+#     else:
+#         print('no file selected!')
 
 
 @app.route('/search', methods=['GET', 'POST'])
