@@ -2,21 +2,44 @@ from flask import Markup
 from Bio import Entrez, Medline
 Entrez.email = 'A.N.Other@example.com'
 Entrez.api_key = "4bcbe73b19b2c6ca3c473e48a056f5dab709"
+""" Pubmed search tool
+
+Todo:
+ - don't use 'A.N.Other@example.com' as Entrez email, as this might cause
+   issues where the server could get a timeout or ban for making
+   requests through the Entrez API
+"""
 
 
-def run_querry(search, method):
-    querry = ""
+def run_query(search, method):
+    """Runs a query (search) against the medline database
+    through biopythons Entrez api (esearch)
+
+    Args:
+        - search (list) : list of search terms
+        - method (string) : method
+
+    Returns:
+        if method == "ids":
+            -  idlist (list) ) list of Id's
+        if method == "amount":
+            - len(idlist) (int) : amount of id's
+        if method == "abstract":
+            - dataList (list) : list with data
+
+    """
+    query = ""
     for term in search:
         if term:
-            querry += term + " "
-    querry.strip()
+            query += term + " "
+    query.strip()
 
-    print(querry)
+    print(query)
     handle = Entrez.esearch(db='pubmed',
                             sort='relevance',
                             retmax='10000',
                             retmode='xml',
-                            term=querry)
+                            term=query)
     record = Entrez.read(handle)
     idlist = record["IdList"]
 
@@ -45,6 +68,15 @@ def run_querry(search, method):
 
 
 def create_collapsible(results):
+    """Creates a collapsible html element for a search result
+    Args:
+        - results (dict): mapping of result attributes
+
+    Returns:
+        - collapsible_data (list): list result attributes in
+          order for collapsible element
+
+    """
     collapsible_data = []
     for i in range(len(results)):
         try:
@@ -72,5 +104,3 @@ def create_collapsible(results):
         collapsible_data[i].append(i)
 
     return collapsible_data
-
-

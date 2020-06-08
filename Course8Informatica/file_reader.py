@@ -2,7 +2,6 @@ import re
 import xml.etree.ElementTree as ET
 import io
 
-
 # Filename had to be changable, so put it into a global for now
 # Todo rework into a class or change methods to take filenames
 #  because we dont need more cyclical dependencies -_-
@@ -10,11 +9,16 @@ import io
 GENEPANEL_FILENAME = "Course8Informatica/GenPanels_merged_DG-2.17.0.txt"
 
 def update_filename(filename):
+    """ Upodates filename
+
+    Problem: Inconsistent upon restart
+    """
     global GENEPANEL_FILENAME
     print(f'updating global filename {GENEPANEL_FILENAME} to {filename}')
     GENEPANEL_FILENAME = filename
 
 def test_is_filename_updated():
+    """ """
     return GENEPANEL_FILENAME
 
 def read_disease_abbreviation_file():
@@ -22,6 +26,10 @@ def read_disease_abbreviation_file():
     # log : output saved as a list in a py file
 
 def read_gene_file():
+    """ parses a textfile of genes
+
+    returns a mapping of gene symbols
+    """
     symbols = {}
 
     gene_file = "human_genes.txt"
@@ -40,25 +48,10 @@ def read_gene_file():
 
 
 def read_mesh_terms_file():
+    """ parser for mesh_terms.csv
+    returns  mapping of mesh terms"""
     # retrieved from ftp://nlmpubs.nlm.nih.gov/online/mesh/MESH_FILES/xmlmesh/
     mesh_dict = {}
-
-    # xml_file = "desc2020.xml"
-    # root = ET.parse(xml_file).getroot()
-
-    # for concept in root.findall('DescriptorRecord/ConceptList/Concept'):
-    #     conceptname = concept.find('ConceptName/String')
-    #     concept_desc = concept.find('ScopeNote')
-    #     concept_string = conceptname.text
-    #     if concept_desc is not None:
-    #         concept_string += ": " + concept_desc.text
-    #     for mesh in concept.findall('TermList/Term/String'):
-    #         mesh_dict[mesh.text.lower()] = concept_string.lower().strip()
-    #
-    #
-    # with io.open("mesh_terms.csv", "w", encoding="utf-8") as f:
-    #     for key, val in mesh_dict.items():
-    #         f.write(key + "\t" + val + "\n")
 
     with io.open("mesh_terms.csv", "r", encoding="utf-8") as f:
         for line in f:
@@ -70,6 +63,16 @@ def read_mesh_terms_file():
 
 
 def read_genepanel_file(filename="Course8Informatica/GenPanels_merged_DG-2.17.0.txt"):
+    """Parser for genepanel file
+
+    Args:
+        @DEPRECATED - filename (str) : name of genepanel file
+
+    Returns:
+          - list(heritanceDict.keys()): list of  heritanceDict keys  todo ??
+          - symbols: list of symbols
+
+    """
     symbols = []
     genpanelsDict = {}
     heritanceDict = {}

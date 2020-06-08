@@ -1,4 +1,4 @@
-from Course8Informatica.database_clasess import JSONhelper
+from Course8Informatica.jsonHelper import JSONhelper
 
 
 if __name__ == '__main__':

@@ -8,8 +8,15 @@ heritance_list, symbols = fr.read_genepanel_file()
 
 joinedExcludeList = heritance_list
 
-
 def find_mesh_terms(text):
+    """Finds and marks meshterms in text
+    Args:
+        - text (str) : text
+
+    Returns:
+        - text (str) : text with marked mesh-terms
+
+    """
     data_first_search = ""
     for data in text:
         data_first_search += data[0] + " " + data[2] + " "
@@ -30,6 +37,14 @@ def find_mesh_terms(text):
 
 
 def create_mesh_dict(text):
+    """Create a mapping of mesh terms from text
+
+    :param text: (str) : input text
+    :return: search_dict (dict) : mapping of meshterms
+
+    Todo
+        1. clarify search_term dict format
+    """
     print(text)
     search_dict = {}
     # mesh_dict = {"reportedly": "test", "shows": "test", "both": "tessst"}
@@ -43,17 +58,34 @@ def create_mesh_dict(text):
 
 
 def mark_mesh(text, search_dict):
+    """Mark mesh terms in a text using mapped terms
+
+        :param text: (str) : text to mark mesh terms in
+        :param: search_dict (dict) : mapping of meshterms
+        :returns: meshterms (list) : list of strings with marked meshterms
+
+
+
+    """
     meshterms = []
     for key in search_dict:
         regexp = re.compile(r'\b' + re.escape(str(key)) + r'\b', re.IGNORECASE)
         if regexp.search(text):
             print(key)
-            meshterms.append(Markup('<span class="btn-solid-lg page-scroll" title="{}"><b>{}</b></span>'.format(search_dict[key], key)))
+            meshterms.append(Markup(f'<span class="btn-solid-lg page-scroll" title="{search_dict[key]}"><b>{key}</b></span>'))
 
     return meshterms
 
 
 def find_genes(text):
+    """Create a mapping of mesh terms from text
+
+        :param text: (str) : input text
+        :return: search_dict (dict) : mapping of meshterms
+
+        Todo
+            1. clarify return & description
+        """
     geneslist = []
     genesDict = {}
     if isinstance(text[0], list):
@@ -74,6 +106,12 @@ def find_genes(text):
 
 
 def mark_genes(text):
+    """Predict and mark symbols in text using html formatting elements
+
+    :arg: text (str) : text to mark
+    :returns: text (str) : text with predicted gene symbols marked.
+    
+    """
     extra_index = 0
     for match in re.finditer(r'( |\()([A-Z]([A-Z]|[0-9]|-){2,})( |\)|,|\.)', text):
         s = match.start()
@@ -82,17 +120,24 @@ def mark_genes(text):
 
         if_state_text = re.sub(r'\(|\)|,|\.', '', match_text).strip()
 
+        # Todo needs clarification
         if if_state_text in symbols:
             text = text[:s+extra_index] + '<span title="Mentioned in current GenePanel"><b>'+ text[s+extra_index:e+extra_index] + '</b></span>' + text[e+extra_index:]
             extra_index += 59
         elif if_state_text in gene_dict:
-            text = text[:s+extra_index] + '<span title="Not mentioned in current GenePanel ({})"><b>'.format(gene_dict[if_state_text]) + text[s+extra_index:e+extra_index] + '</b></span>' + text[e+extra_index:]
+            text = text[:s+extra_index] + f'<span title="Not mentioned in current GenePanel ({gene_dict[if_state_text]})"><b>' + \
+                                            text[s+extra_index:e+extra_index] + '</b></span>' + text[e+extra_index:]
             extra_index += 65 + len(gene_dict[if_state_text])
 
     return text
 
 
 def return_genes(text):
+    """Rredict genes in a given text
+
+    :param text (str) : text
+    :return genes (list) : list of predicted genes
+    """
     genes = []
     extra_index = 0
     for match in re.finditer(r'( |\()([A-Z]([A-Z]|[0-9]|-)+)( |\)|,)',
