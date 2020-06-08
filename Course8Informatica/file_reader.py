@@ -63,6 +63,16 @@ def read_mesh_terms_file():
 
 
 def read_genepanel_file(filename="Course8Informatica/GenPanels_merged_DG-2.17.0.txt"):
+    """Parser for genepanel file
+
+    Args:
+        @DEPRECATED - filename (str) : name of genepanel file
+
+    Returns:
+          - list(heritanceDict.keys()): list of  heritanceDict keys  todo ??
+          - symbols: list of symbols
+
+    """
     symbols = []
     genpanelsDict = {}
     heritanceDict = {}
