@@ -120,14 +120,16 @@ def mark_genes(text):
 
         if_state_text = re.sub(r'\(|\)|,|\.', '', match_text).strip()
 
-        # Todo needs clarification
         if if_state_text in symbols:
-            text = text[:s+extra_index] + '<span title="Mentioned in current GenePanel"><b>'+ text[s+extra_index:e+extra_index] + '</b></span>' + text[e+extra_index:]
-            extra_index += 59
+            text = text[:s+extra_index] + '<span class="span-results1" title="Mentioned in current GenePanel"><b>'+ text[s+extra_index:e+extra_index] + '</b></span>' + text[e+extra_index:]
+            extra_index += 81
         elif if_state_text in gene_dict:
-            text = text[:s+extra_index] + f'<span title="Not mentioned in current GenePanel ({gene_dict[if_state_text]})"><b>' + \
-                                            text[s+extra_index:e+extra_index] + '</b></span>' + text[e+extra_index:]
-            extra_index += 65 + len(gene_dict[if_state_text])
+            text = text[:s+extra_index] + '<span class="span-results2" title="Not mentioned in current GenePanel but mentioned in NCBI Human Gene Database({})"><b>'.format(gene_dict[if_state_text]) + text[s+extra_index:e+extra_index] + '</b></span>' + text[e+extra_index:]
+            extra_index += 129 + len(gene_dict[if_state_text])
+        else:
+            text = text[:s+extra_index] + '<span class="span-results3" title="Not mentioned in either GenePanel or NCBI Human Gene Database"><b>'+ text[s+extra_index:e+extra_index] + '</b></span>' + text[e+extra_index:]
+
+            extra_index += 112
 
     return text
 

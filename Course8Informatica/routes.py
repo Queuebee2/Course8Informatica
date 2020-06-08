@@ -80,10 +80,12 @@ def search_test():
     """
     global requestdata
 
-    search = ['', '', '']
+    search = ['', '', '', '', '']
     search[0] = request.form.get("search1", "")
     search[1] = request.form.get("search2", "")
     search[2] = request.form.get("search3", "")
+    search[3] = request.form.get("search4", "")
+    search[4] = request.form.get("search5", "")
     marked = request.form.get("select", "")
     selectall = request.form.get("select-all", "")
     deselectall = request.form.get("deselect-all", "")

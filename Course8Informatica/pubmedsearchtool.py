@@ -29,12 +29,19 @@ def run_query(search, method):
 
     """
     query = ""
-    for term in search:
+    for term in search[:3]:
         if term:
             query += term + " "
     query.strip()
 
-    print(query)
+    date = '(("1900/12/12"[Date - Completion] : "3000"[Date - Completion]))'
+    if search[3]:
+        date = date.replace("1900/12/12", search[3])
+    if search[4]:
+        date = date.replace("3000", search[4])
+
+    if search[3] or search[4]:
+        query = query + " AND " + date
     handle = Entrez.esearch(db='pubmed',
                             sort='relevance',
                             retmax='10000',

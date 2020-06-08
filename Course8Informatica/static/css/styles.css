@@ -161,7 +161,7 @@ a.white {
 .form-control-input,
 .form-control-select {
 	display: block; /* needed for proper display of the label in Firefox, IE, Edge */
-	width: 100%;
+	width: 50%;
 	padding-top: 1.0625rem;
 	padding-bottom: 0.0625rem;
 	padding-left: 1.3125rem;
@@ -548,6 +548,13 @@ select::-ms-expand {
 	margin-right: 0.125rem;
 }
 
+
+/*********************/
+/*    	 Wrapper     */
+/*********************/
+.wrapper {
+    text-align: center;
+}
 
 /*********************/
 /*    	 Header     */
