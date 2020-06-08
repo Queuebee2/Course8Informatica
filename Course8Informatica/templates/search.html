@@ -92,7 +92,7 @@
 
       <form action = "/update_genepanel" method = "POST"
          enctype = "multipart/form-data">
-         <input type="file" class="btn-solid-lg page-scroll" name="file" />
+         <input type="file" class="btn-solid-lg page-scroll" name="file" value="Choose your file. "/>
         <input type="submit" class="btn-solid-lg page-scroll" name="update" value="Update GenePanel" />
       </form>
 
@@ -101,10 +101,11 @@
     <input name="search1" placeholder="Protein(s)..." class="form-control-input"><br>
     <input name="search2" placeholder="Phenotype(s)..." class="form-control-input"><br>
     <input name="search3" placeholder="Other..." class="form-control-input"><br>
-    <input type ="checkbox" name="checkbox_phenotype" class ="check" Also search and show phenotypes in text. >
+    <input name="search4" placeholder="Date from... (YYYY/MM/DD)" class="form-control-input"><br>
+    <input name="search5" placeholder="Date until... (YYYY/MM/DD)" class="form-control-input"><br>
         <input type="submit" class="btn-solid-lg page-scroll" name="search1" value="Search">
+    <input type ="checkbox" name="checkbox_phenotype" class ="check" >Also search and show phenotypes in text.
     <br><br>
-    <input type="submit" class="btn-solid-lg page-scroll" name="select" value="Select">
     <input type="submit" class="btn-solid-lg page-scroll" name="export" value="Export data" />
 
     <br><br>
