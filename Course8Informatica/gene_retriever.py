@@ -47,7 +47,7 @@ def mark_mesh(text, search_dict):
         regexp = re.compile(r'\b' + re.escape(str(key)) + r'\b', re.IGNORECASE)
         if regexp.search(text):
             print(key)
-            meshterms.append(Markup('<span class="btn-solid-lg page-scroll" title="{}"><b>{}</b></span>'.format(search_dict[key], key)))
+            meshterms.append(Markup(f'<span class="btn-solid-lg page-scroll" title="{search_dict[key]}"><b>{key}</b></span>'))
 
     return meshterms
 
@@ -85,7 +85,8 @@ def mark_genes(text):
             text = text[:s+extra_index] + '<span title="Mentioned in current GenePanel"><b>'+ text[s+extra_index:e+extra_index] + '</b></span>' + text[e+extra_index:]
             extra_index += 59
         elif if_state_text in gene_dict:
-            text = text[:s+extra_index] + '<span title="Not mentioned in current GenePanel ({})"><b>'.format(gene_dict[if_state_text]) + text[s+extra_index:e+extra_index] + '</b></span>' + text[e+extra_index:]
+            text = text[:s+extra_index] + f'<span title="Not mentioned in current GenePanel ({gene_dict[if_state_text]})"><b>' + \
+                                            text[s+extra_index:e+extra_index] + '</b></span>' + text[e+extra_index:]
             extra_index += 65 + len(gene_dict[if_state_text])
 
     return text

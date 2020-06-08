@@ -98,7 +98,7 @@ def search_test():
             print(request.form.getlist("checkbox"))
             content = "PMID;Gene(s);Title\n"
             for i in range(len(collapsible_data)):
-                if request.form.get("checkbox{}".format(i), "") == "on":
+                if request.form.get(f"checkbox{i}", "") == "on":
                     PMID = collapsible_data[i][3]
                     genes = gr.find_genes(collapsible_data[i])
                     title = collapsible_data[i][0]
