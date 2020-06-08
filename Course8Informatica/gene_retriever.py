@@ -8,7 +8,6 @@ heritance_list, symbols = fr.read_genepanel_file()
 
 joinedExcludeList = heritance_list
 
-
 def find_mesh_terms(text):
     data_first_search = ""
     for data in text:
