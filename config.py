@@ -15,4 +15,3 @@ class Config:
 
     # Debug
     SQLALCHEMY_ECHO = True
-
