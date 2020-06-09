@@ -1,0 +1,10 @@
+{% extends "layout.html" %}
+{% block title %} testing module imports {% endblock %}
+{% block content %}
+   <p>module imported?</p> <br>
+    {% if module_output %}
+    <p> succes </p>
+    {% else %}
+    <p> failed </p>
+    {% endif %}
+{% endblock %}

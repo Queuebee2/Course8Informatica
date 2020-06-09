@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <!-- Meta Tags -->
+    <meta name="description" content="PubMole - Digging for molecular truths.">
+
+    <!-- Website Title -->
+    <title>PubMole - Digging for molecular truths</title>
+    
+    <!-- All CSS -->
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i" rel="stylesheet">
+    <link href="../static/css/bootstrap.css" rel="stylesheet">
+    <link href="../static/css/fontawesome-all.css" rel="stylesheet">
+    <link href="../static/css/swiper.css" rel="stylesheet">
+	<link href="../static/css/styles.css" rel="stylesheet">
+	
+	<!-- Favicon   -->
+    <link rel="icon" href="images/favicon.png">
+</head>
+<body data-spy="scroll" data-target=".fixed-top">
+    
+    <!-- Preloader -->
+	<div class="spinner-wrapper">
+        <div class="spinner">
+            <div class="bounce1"></div>
+            <div class="bounce2"></div>
+            <div class="bounce3"></div>
+        </div>
+    </div>
+    <!-- end of preloader -->
+    
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-md navbar-dark navbar-custom fixed-top">
+        <!-- Logo [website name] -->
+        <a class="navbar-brand logo-text page-scroll" href="/">PubMole</a>
+        
+        <!-- Mobile Menu Button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-awesome fas fa-bars"></span>
+            <span class="navbar-toggler-awesome fas fa-times"></span>
+        </button>
+        <!-- end of mobile menu button -->
+
+        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="#header">HOME <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="#about">ABOUT</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="#preview">STORED DATA</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="#contact">CONTACT</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="search">SEARCH</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- end of navbar -->
+
+
+    <!-- Header -->
+    <header id="header" class="header">
+        <div class="header-content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="text-container">
+                            <h1>QUICKLY DIG THROUGH <br><span id="js-rotating">PUBMED PULICATIONS, GENE INFORMATION</span></h1>
+                            <p class="p-large">Begin searching today!</p>
+                            <a class="btn-solid-lg page-scroll" href="search"></i>BEGIN SEARCHING</a>
+                        </div>
+                    </div> <!-- end of col -->
+                    <div class="col-lg-6">
+                    </div> <!-- end of col -->
+                </div> <!-- end of row -->
+            </div> <!-- end of container -->
+        </div> <!-- end of header-content -->
+    </header> <!-- end of header -->
+    <!-- end of header -->
+    
+
+    <!-- About -->
+    <div id="about" class="tabs">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2>ABOUT</h2>
+                    <div class="p-heading p-large">This website was created for the Translational Genomics department within Radboud UMC. This website serves as a proof of concept.</div>
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+            <div class="row">
+
+                <!-- Tabs Links -->
+                <ul class="nav nav-tabs" id="lenoTabs" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active" id="nav-tab-1" data-toggle="tab" href="#tab-1" role="tab" aria-controls="tab-1" aria-selected="true"><i class="fas fa-binoculars"></i>PARAMETERS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="nav-tab-2" data-toggle="tab" href="#tab-2" role="tab" aria-controls="tab-2" aria-selected="false"><i class="fas fa-cog"></i>HOW DOES IT WORK</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="nav-tab-3" data-toggle="tab" href="#tab-3" role="tab" aria-controls="tab-3" aria-selected="false"><i class="fas fa-search"></i>LINKS</a>
+                    </li>
+                </ul>
+                <!-- end of tabs links -->
+
+
+                <!-- Tabs Content-->
+                <div class="tab-content" id="lenoTabsContent">
+
+                    <!-- Parameters Tab -->
+                    <div class="tab-pane fade show active" id="tab-1" role="tabpanel" aria-labelledby="tab-1">
+                        <div class="container">
+                            <div class="row">
+
+                                <!-- Icon Cards Pane -->
+                                <div class="col-lg-4">
+                                    <div class="card left-pane first">
+                                        <div class="card-body">
+                                            <div class="text-wrapper">
+                                                <h4 class="card-title">Genes</h4>
+                                                <p>Search results are examined for (possible new) genes, with the help of an algorithm.  </p>
+                                            </div>
+                                            <div class="card-icon">
+                                                <i class="fas fa-search"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card left-pane">
+                                        <div class="card-body">
+                                            <div class="text-wrapper">
+                                                <h4 class="card-title">Phenotypes</h4>
+                                                <p>Search results are examined for phenotypes. It uses mesh terms to look for these phenotypes. </p>
+                                            </div>
+                                            <div class="card-icon">
+                                                <i class="fas fa-search"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- end of icon cards pane -->
+
+                                <!-- Image Pane -->
+                                <div class="col-lg-4">
+                                    <img class="img-fluid" src="images/screenshot+.png" alt="alternative">
+                                </div>
+                                <!-- end of image pane -->
+
+                                <!-- Icon Cards Pane -->
+                                <div class="col-lg-4">
+                                    <div class="card right-pane first">
+                                        <div class="card-body">
+                                            <div class="card-icon">
+                                                <i class="fas fa-search"></i>
+                                            </div>
+                                            <div class="text-wrapper">
+                                                <h4 class="card-title">Time</h4>
+                                                <p>A time frame can be entered, in which the tool searches. </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card right-pane">
+                                        <div class="card-body">
+                                            <div class="card-icon">
+                                                <i class="fas fa-search"></i>
+                                            </div>
+                                            <div class="text-wrapper">
+                                                <h4 class="card-title">You</h4>
+                                                <p>You, the user, decides what other (textual) parameters you want to help you narrow down your search. The 'other' search field can be filled with any regular PubMed search term. </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- end of icon cards pane -->
+
+                            </div> <!-- end of row -->
+                        </div> <!-- end of container -->
+                    </div> <!-- end of tab-pane -->
+                    <!-- end of Parameters tab -->
+
+                    <!-- How Tab -->
+                    <div class="tab-pane fade" id="tab-2" role="tabpanel" aria-labelledby="tab-2">
+                        <div class="container">
+                            <div class="row">
+                                
+                                <!-- Text area -->
+                                <div class="col-md-8">
+                                    <div class="text-area">
+                                        <h3>How does it work</h3>
+                                        <p>Format your own PubMed search query with PubMole. PubMole offers different searchbars which compose your PubMed search query! Results are parsed and edited by our gene and phenotype identifiers to help you get all the relevant information.
+                                    </div> <!-- end of text-area -->
+                                </div> <!-- end of col-md-8 -->
+                                <!-- end of text area -->
+
+                                 <!-- Image Pane -->
+                                <div class="col-md-4">
+                                    <img class="img-fluid" src="images/screenshot.png" alt="alternative">
+                                </div>
+                                <!-- end of image pane -->
+
+                                <!-- Icon Cards Pane -->
+                                <div class="col-lg-4">
+                                    <div class="card right-pane first">
+                                        <div class="card-body">
+                                            <div class="card-icon">
+                                                <i class="far fa-bookmark"></i>
+                                            </div>
+                                            <div class="text-wrapper">
+                                                <h4 class="card-title">Examining results</h4>
+                                                <p>Examining results is easier then ever! Color codes for genes help you identify GenePanel-, NCBI- or even newer less known genes. But be aware, algorithms can make mistakes too!</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div><div class="col-lg-4">
+                                    <div class="card left-pane first">
+                                        <div class="card-body">
+                                            <div class="card-icon">
+                                                <i class="far fa-bookmark"></i>
+                                            </div>
+                                            <div class="text-wrapper">
+                                                <h4 class="card-title">Exporting results</h4>
+                                                <p>All results can be exported to a csv file. Use the select buttons next to the titles in the results to select your relevant results!</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- end of icon cards pane -->
+
+
+                            </div> <!-- end of row -->
+                        </div> <!-- end of container -->
+                    </div> <!-- end of tab-pane -->
+                    <!-- end of Database tab -->
+
+                    <!-- Links Tab -->
+                    <div class="tab-pane fade" id="tab-3" role="tabpanel" aria-labelledby="tab-3">
+                        <div class="container">
+                            <div class="row">
+                                    
+                                    <div class="text-area">
+                                        <h3>Where all the data comes from: </h3>
+                                        <p><a class="turquoise" href="https://meshb.nlm.nih.gov/record/ui?name=Humans">Mesh Terms </a></p>
+                                        <p> <a class="turquoise" href="https://www.ncbi.nlm.nih.gov/gene/">NCBI Genes</a></p>
+                                    </div> <!-- end of text-area -->
+                                </div> <!-- end of col-md-8 -->
+                                <!-- end of text and icon cards area -->
+
+                                    
+                            </div> <!-- end of row -->
+                        </div> <!-- end of container -->
+                    </div><!-- end of tab-pane -->
+                    <!-- end of Links tab -->
+
+                </div> <!-- end of tab-content -->
+                <!-- end of tabs content -->
+
+            </div> <!-- end of row --> 
+        </div> <!-- end of container --> 
+    </div> <!-- end of tabs -->
+    <!-- end of about -->
+
+    <!-- Developers -->
+    <div class="slider-1">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2>The developers</h2>
+                    <!-- Card Slider -->
+                    <div class="slider-container">
+                        <div class="swiper-container card-slider">
+                            <div class="swiper-wrapper">
+
+                                <!-- Slide -->
+                                <div class="swiper-slide">
+                                    <div class="card">
+                                        <img class="card-image" src="../static/images/b-jolink-foto.png" alt="alternative">
+                                        <div class="card-body">
+                                            <p class="developer-name">B. Jolink</p>
+                                        </div>
+                                    </div>
+                                </div> <!-- end of swiper-slide -->
+                                <!-- end of slide -->
+
+                                <!-- Slide -->
+                                <div class="swiper-slide">
+                                    <div class="card">
+                                        <img class="card-image" src="https://avatars1.githubusercontent.com/u/32010930?s=460&u=9965e8537ccef9b0b8baebf620311d66427e27b2&v=4" alt="alternative">
+                                        <div class="card-body">
+                                            <p class="developer-name">M. Lambers</p>
+                                        </div>
+                                    </div>
+                                </div> <!-- end of swiper-slide -->
+                                <!-- end of slide -->
+
+                                <!-- Slide -->
+                                <div class="swiper-slide">
+                                    <div class="card">
+                                        <img class="card-image" src="https://signland.nl/wp-content/uploads/2017/09/ss-ltr-M.jpg" alt="alternative">
+                                        <div class="card-body">
+                                            <p class="developer-name">M. Atmodimedjo</p>
+                                        </div>
+                                    </div>
+                                </div> <!-- end of swiper-slide -->
+                                <!-- end of slide -->
+
+                            </div> <!-- end of swiper-wrapper -->
+
+                            <!-- Add Arrows -->
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                            <!-- end of add arrows -->
+
+                        </div> <!-- end of swiper-container -->
+                    </div> <!-- end of slider-container -->
+                    <!-- end of card slider -->
+
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of slider-1 -->
+    <!-- end of Developers -->
+
+    <!-- data storage -->
+    <div id="preview" class="basic-1">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2>DATA STORAGE/ PINNED DATA</h2>
+                    <div class="p-heading p-large">No user and or search data is stored. This tool uses live search results of PubMed which are examined and altered by the tool itself. </div>
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of basic-1 -->
+    <!-- end of data storage -->
+
+
+
+    <!-- Contact -->
+    <div id="contact" class="form">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2>CONTACT</h2>
+                    <ul class="list-unstyled li-space-lg">
+                        <li class="address">Don't hesitate to send us a mail or use the contact form below</li>
+                        <li><i class="fas fa-envelope"></i><a class="blue" href="mailto:website@gmail.com">website@gmail.com</a></li>
+                    </ul>
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+            <div class="row">
+                <div class="col-lg-6 offset-lg-3">
+                    
+                    <!-- Contact Form -->
+                    <form id="contactForm" data-toggle="validator" data-focus="false">
+                        <div class="form-group">
+                            <input type="text" class="form-control-input" id="cname" required>
+                            <label class="label-control" for="cname">Name</label>
+                            <div class="help-block with-errors"></div>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-control-input" id="cemail" required>
+                            <label class="label-control" for="cemail">Email</label>
+                            <div class="help-block with-errors"></div>
+                        </div>
+                        <div class="form-group">
+                            <textarea class="form-control-textarea" id="cmessage" required></textarea>
+                            <label class="label-control" for="cmessage">Your message</label>
+                            <div class="help-block with-errors"></div>
+                        </div>
+                        <div class="form-group">
+                            <button type="submit" class="form-control-submit-button">SUBMIT MESSAGE</button>
+                        </div>
+                        <div class="form-message">
+                            <div id="cmsgSubmit" class="h3 text-center hidden"></div>
+                        </div>
+                    </form>
+                    <!-- end of contact form -->
+
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of form -->
+    <!-- end of contact -->
+
+
+    <!-- Footer -->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="footer-col">
+                        <h4>PubMole</h4>
+                        <p>Digging for molecular truths</p>
+                    </div>
+                </div> <!-- end of col -->
+                <div class="col-md-4">
+                    <div class="footer-col middle">
+                        <h4>Important Links</h4>
+                        <ul class="list-unstyled li-space-lg">
+                            <li class="media">
+                                <i class="fas fa-square"></i>
+                                <div class="media-body">Data from: <a class="turquoise" href="https://pubmed.ncbi.nlm.nih.gov/">PubMed</a></div>
+                            </li>
+                            <li class="media">
+                                <i class="fas fa-square"></i>
+                                <div class="media-body">Our business partner: <a class="turquoise" href="#your-link">Jeroen van Reeuwijk (Radboud UMC)</a></div>
+                            </li>
+                        </ul>
+                    </div>
+                </div> <!-- end of col -->
+                <div class="col-md-4">
+                    <div class="footer-col last">
+                        <h4>Contact Us</h4>
+                        <span class="fa-stack">
+                            <a href="website@gmail.com">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fas fa-envelope fa-stack-1x"></i>
+                            </a>
+                        </span>
+                    </div> 
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+     </div><!-- end of footer -->
+
+
+    <!-- Copyright -->
+    <div class="copyright">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <p class="p-small">Copyright © PubMole - "Digging for molecular truths" by Bart Jolink, Milain Lambers & Morgan Atmodimedjo</p>
+                </div> <!-- end of col -->
+            </div> <!-- enf of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of copyright --> 
+    <!-- end of copyright -->
+    
+    	
+    <!-- javascripts -->
+    <script src="../static/js/jquery.min.js"></script> <!-- jQuery for Bootstrap's JavaScript plugins -->
+    <script src="../static/js/popper.min.js"></script> <!-- Popper tooltip library for Bootstrap -->
+    <script src="../static/js/bootstrap.min.js"></script> <!-- Bootstrap framework -->
+    <script src="../static/js/jquery.easing.min.js"></script> <!-- jQuery Easing for smooth scrolling between anchors -->
+    <script src="../static/js/swiper.min.js"></script> <!-- Swiper for image and text sliders -->
+    <script src="../static/js/morphext.min.js"></script> <!-- Morphtext rotating text in the header -->
+    <script src="../static/js/validator.min.js"></script> <!-- Validator.js - Bootstrap plugin that validates forms -->
+    <script src="../static/js/scripts.js"></script> <!-- Custom scripts -->
+
+</body>
+</html>

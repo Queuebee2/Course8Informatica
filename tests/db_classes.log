@@ -1,0 +1,15 @@
+DEBUG:root:file jsondumps\jsondump.json was empty
+DEBUG:root:file 'jsondumps\jsondump.json' was empty
+DEBUG:root:file 'jsondumps\jsondump.json' was empty
+DEBUG:root:file 'jsondumps\jsondump.json' was empty
+DEBUG:root:file 'jsondumps\jsondump.json' was empty
+DEBUG:root:file 'jsondumps\jsondump.json' was empty
+DEBUG:root:file 'jsondumps\jsondump.json' was empty
+DEBUG:root:succesfully loaded obj: {'random': [1, 2, 3, 4], 'list': [1, 2, 3, 4, 5], 'data': [1, 2, 65, 654]}
+DEBUG:root:file 'jsondumps\jsondump.json' was empty
+DEBUG:root:succesfully loaded obj: {'random': [1, 2, 3, 4], 'list': [1, 2, 3, 4, 5], 'data': [1, 2, 65, 654]}
+DEBUG:root:succesfully loaded obj: {'random': [1, 2, 3, 4], 'list': [1, 2, 3, 4, 5], 'data': [1, 2, 65, 654]}
+DEBUG:root:file 'jsondumps\jsondump.json' was empty
+DEBUG:root:succesfully loaded obj: {'random': [1, 2, 3, 4], 'list': [1, 2, 3, 4, 5], 'data': [1, 2, 65, 654], 'bob': {'cindy': {'mark':
+DEBUG:root:succesfully loaded obj: {'random': [1, 2, 3, 4], 'list': [1, 2, 3, 4, 5], 'data': [1, 2, 65, 654], 'bob': {'cindy': {'mark':
+DEBUG:root:succesfully loaded obj: {'random': [1, 2, 3, 4], 'list': [1, 2, 3, 4, 5], 'data': [1, 2, 65, 654], 'bob': {'cindy': {'mark':

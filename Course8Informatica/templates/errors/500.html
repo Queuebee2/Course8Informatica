@@ -1,0 +1,37 @@
+<!--
+{% extends "layout.html" %}
+{% block title %}Server error - error 500{% endblock %}
+{% block content %}
+
+  {% if error_message == "success" %}
+    <p>Sucessfully tested server crash error!</p>
+  {% else %}
+     <h1>Incredible internal server error</h1>
+     <p>something went horribly wrong!!
+  {% endif %}
+
+{# todo: use relative jinja urling thingy instead of "/" {{ url_for('index') }}  #}
+  <p><a href="/">go back to safety</a>
+{% endblock %}-->
+
+<!DOCTYPE HTML>
+
+<html>
+    <head>
+        <title>PubMole - Digging for molecular truths</title>
+        <link rel="stylesheet" href="../static/css/errors.css">
+    </head>
+
+	<body>
+        <div class="filter">
+        </div>
+
+        <div class="error">
+			<h1>500</h1>
+            <p>something went horribly wrong!</p>
+			
+			<a href="../index.html"><div class="btn">Go back to safety</div></a>
+        </div>
+    </body>
+    
+</html>
