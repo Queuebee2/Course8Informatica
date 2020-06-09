@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+	background: url('dna.jpg') center center no-repeat;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.filter{
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #000;
+    opacity: .7;
+}
+.error{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    color: #fff;
+    font-family: sans-serif;
+}
+h1{
+    font-size: 105pt;
+    margin: 0;
+}
+p{
+    text-align: center;
+    width:425px;
+    font-size: 14pt;
+    margin-bottom: 15px;
+}
+a{
+    text-decoration: none;
+}
+.btn{
+   padding: 10px 0;
+    width: 425px;
+    color: #fff;
+
+    font-size: 18pt;
+    border: 2px solid white;
+    border-radius: 10px;
+    transition: .4s;
+}
+.btn:hover{
+    background-color: #fff;
+    color: #000;
+}

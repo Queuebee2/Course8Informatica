@@ -12,7 +12,7 @@ def page_not_found(e):
 def server_error(e):
     """Handles 500 requests, renders code 500 error page"""
     # Todo turn this into a reroute through routes
-    return render_template('errors/500.html', error_message=e.description), 500
+    return render_template('errors/500.html'), 500
 
 
 # register error handlers to app
