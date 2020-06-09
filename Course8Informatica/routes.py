@@ -5,7 +5,7 @@ from flask import current_app as app
 from flask import render_template
 from flask import request, Response, redirect
 from Course8Informatica import pubmedsearchtool as ps
-from Course8Informatica import gene_retriever as gr
+from Course8Informatica import info_retriever as ir
 from Course8Informatica import csv_formatter as cf
 from Course8Informatica.file_reader import test_is_filename_updated, update_filename, GENEPANEL_FILENAME
 from werkzeug.utils import secure_filename
@@ -60,7 +60,7 @@ def update():
             update_filename(file.filename)
 
             # TODO 4. make sure genepanel contents are re-loaded!
-            #  (see gene_retriever)
+            #  (see info_retriever)
             print(f'filename updated to: {test_is_filename_updated()}')
         else:
             # TODO 5. return (append) warning / popup ...
@@ -102,7 +102,7 @@ def search_test():
             for i in range(len(collapsible_data)):
                 if request.form.get(f"checkbox{i}", "") == "on":
                     PMID = collapsible_data[i][3]
-                    genes = gr.find_genes(collapsible_data[i])
+                    genes = ir.find_genes(collapsible_data[i])
                     mesh = collapsible_data[i][5]
                     title = collapsible_data[i][0]
                     content += cf.format_csv_data(PMID, genes, title, mesh) + '\n'
@@ -129,9 +129,9 @@ def search_test():
     if search[0] or search[1] or search[2]:
         results = ps.run_query(search, 'abstract')
         collapsible_data = ps.create_collapsible(results)
-        collapsible_data = gr.find_genes(collapsible_data)
+        collapsible_data = ir.find_genes(collapsible_data)
         if request.form.get("checkbox_phenotype", "") == "on":
-            collapsible_data = gr.find_mesh_terms(collapsible_data)
+            collapsible_data = ir.find_mesh_terms(collapsible_data)
         requestdata = collapsible_data
     return render_template('search.html',
                            results=collapsible_data)
