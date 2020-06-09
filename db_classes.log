@@ -1,0 +1,1153 @@
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 218-051-286
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [24/May/2020 22:16:30] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/May/2020 22:16:31] "[37mGET /database_test HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/May/2020 22:16:37] "[37mGET /test_module_import HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/May/2020 22:16:37] "[33mGET /doesnt_exist HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [24/May/2020 22:16:37] "[37mGET /database HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/May/2020 22:16:38] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/May/2020 22:16:38] "[33mGET /doesnt_exist HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [24/May/2020 22:16:39] "[35m[1mGET /crash_the_server HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 218-051-286
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [24/May/2020 22:20:36] "[37mGET /database HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/May/2020 22:20:40] "[35m[1mGET /search HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [24/May/2020 22:20:40] "[37mGET /search?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/May/2020 22:20:40] "[37mGET /search?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/May/2020 22:20:40] "[37mGET /search?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/May/2020 22:20:40] "[37mGET /search?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/May/2020 22:20:40] "[37mGET /search?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/May/2020 22:20:40] "[37mGET /search?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Detected change in 'D:\\GitHub\\Course8Informatica\\Course8Informatica\\routes.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 218-051-286
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 218-051-286
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Detected change in 'D:\\GitHub\\Course8Informatica\\wsgi.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 218-051-286
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [24/May/2020 22:32:05] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/May/2020 22:32:06] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/May/2020 22:32:07] "[37mGET /database HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/May/2020 22:32:07] "[33mGET /doesnt_exist HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [24/May/2020 22:32:08] "[33mGET /doesnt_exist HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [24/May/2020 22:32:08] "[37mGET /test_module_import HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/May/2020 22:32:08] "[37mGET /database_test HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/May/2020 22:32:13] "[37mGET /search HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/May/2020 22:32:28] "[37mPOST /search HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/May/2020 22:33:50] "[37mPOST /search HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/May/2020 22:33:53] "[37mPOST /search HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/May/2020 22:33:56] "[37mPOST /search HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/May/2020 22:33:58] "[37mPOST /search HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/May/2020 22:33:59] "[37mPOST /search HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/May/2020 22:34:00] "[37mPOST /search HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/May/2020 22:34:05] "[37mPOST /search HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/May/2020 22:34:06] "[37mPOST /search HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/May/2020 22:34:15] "[37mPOST /search HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/May/2020 22:34:31] "[37mPOST /search HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/May/2020 22:34:43] "[37mPOST /search HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 211-719-561
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [27/May/2020 17:40:07] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/May/2020 17:40:07] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [27/May/2020 17:40:11] "[33mGET /index HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [27/May/2020 17:42:21] "[37mGET /search HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 211-719-561
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [27/May/2020 18:07:45] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/May/2020 18:07:52] "[37mGET /search HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 211-719-561
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Detected change in 'D:\\GitHub\\Course8Informatica\\Course8Informatica\\pubmedsearchtool.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 211-719-561
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 211-719-561
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 211-719-561
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [27/May/2020 18:13:51] "[37mPOST /search HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 211-719-561
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Detected change in 'D:\\GitHub\\Course8Informatica\\wsgi.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 211-719-561
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 211-719-561
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [27/May/2020 18:15:15] "[37mPOST /search HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 211-719-561
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [27/May/2020 18:19:21] "[37mPOST /search HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Detected change in 'D:\\GitHub\\Course8Informatica\\wsgi.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 211-719-561
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 211-719-561
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 11:33:38] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 11:33:38] "[37mGET /static/css/bootstrap.css HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 11:33:38] "[37mGET /static/css/fontawesome-all.css HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 11:33:38] "[37mGET /static/css/swiper.css HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 11:33:38] "[37mGET /static/css/styles.css HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 11:33:38] "[33mGET /js/jquery.easing.min.js HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 11:33:38] "[33mGET /js/jquery.min.js HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 11:33:38] "[33mGET /js/swiper.min.js HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 11:33:38] "[33mGET /js/bootstrap.min.js HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 11:33:38] "[33mGET /js/popper.min.js HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 11:33:38] "[33mGET /js/morphext.min.js HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 11:33:38] "[33mGET /js/validator.min.js HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 11:33:38] "[33mGET /js/scripts.js HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 11:33:38] "[33mGET /images/screenshot+.png HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 11:33:38] "[33mGET /images/screenshot.png HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 11:33:38] "[33mGET /images/insert_image.png HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 11:33:38] "[33mGET /js/jquery.easing.min.js HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 11:33:38] "[37mGET /static/images/dna.jpg HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 11:33:38] "[37mGET /static/images/contact-background.jpg HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 11:33:38] "[33mGET /static/webfonts/fa-solid-900.woff2 HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 11:33:38] "[33mGET /js/swiper.min.js HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 11:33:38] "[33mGET /static/webfonts/fa-solid-900.woff HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 11:33:38] "[33mGET /js/morphext.min.js HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 11:33:38] "[33mGET /static/webfonts/fa-solid-900.ttf HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 11:33:38] "[33mGET /js/validator.min.js HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 11:33:38] "[33mGET /js/scripts.js HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 11:33:38] "[33mGET /images/favicon.png HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 11:34:00] "[33mGET /search-entrez HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 11:34:07] "[33mGET /searc HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 11:34:10] "[37mGET /search HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 11:34:12] "[37mPOST /search HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 11:34:12] "[37mPOST /search HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 11:34:13] "[37mPOST /search HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 211-719-561
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 11:40:04] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 11:40:04] "[33mGET /static/js/jquery.min.js HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 11:40:04] "[33mGET /static/js/popper.min.js HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 11:40:04] "[33mGET /static/js/bootstrap.min.js HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 11:40:04] "[33mGET /static/js/jquery.easing.min.js HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 11:40:04] "[33mGET /images/screenshot+.png HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 11:40:04] "[33mGET /static/js/swiper.min.js HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 11:40:04] "[33mGET /static/js/morphext.min.js HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 11:40:04] "[33mGET /static/js/validator.min.js HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 11:40:04] "[33mGET /static/js/scripts.js HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 11:40:04] "[33mGET /images/screenshot.png HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 11:40:04] "[33mGET /images/insert_image.png HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 11:40:05] "[33mGET /static/js/morphext.min.js HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 11:40:05] "[33mGET /static/images/dna.jpg HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 11:40:05] "[33mGET /static/images/contact-background.jpg HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 11:40:05] "[33mGET /static/webfonts/fa-solid-900.woff2 HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 11:40:05] "[33mGET /static/js/validator.min.js HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 11:40:05] "[33mGET /static/webfonts/fa-solid-900.woff HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 11:40:05] "[33mGET /static/js/scripts.js HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 11:40:05] "[33mGET /static/webfonts/fa-solid-900.ttf HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 11:41:29] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 11:41:29] "[33mGET /static/js/jquery.min.js HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 11:41:29] "[33mGET /static/js/popper.min.js HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 11:41:29] "[33mGET /static/js/bootstrap.min.js HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 11:41:29] "[33mGET /static/js/jquery.easing.min.js HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 11:41:29] "[33mGET /static/js/swiper.min.js HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 11:41:29] "[33mGET /static/js/morphext.min.js HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 11:41:29] "[33mGET /static/js/validator.min.js HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 11:41:29] "[33mGET /static/js/scripts.js HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 11:41:29] "[33mGET /images/screenshot+.png HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 11:41:29] "[33mGET /images/screenshot.png HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 11:41:29] "[33mGET /images/insert_image.png HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 11:41:29] "[33mGET /static/webfonts/fa-solid-900.woff2 HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 11:41:29] "[33mGET /static/js/morphext.min.js HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 11:41:29] "[33mGET /static/webfonts/fa-solid-900.woff HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 11:41:29] "[33mGET /static/js/validator.min.js HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 11:41:29] "[33mGET /static/webfonts/fa-solid-900.ttf HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 11:41:29] "[33mGET /static/js/scripts.js HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 11:41:29] "[33mGET /images/favicon.png HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 11:41:39] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 11:41:39] "[33mGET /static/css/bootstrap.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 11:41:39] "[33mGET /static/css/fontawesome-all.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 11:41:39] "[33mGET /static/css/swiper.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 11:41:39] "[33mGET /static/css/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 11:41:39] "[33mGET /static/js/jquery.min.js HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 11:41:39] "[33mGET /static/js/popper.min.js HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 11:41:39] "[33mGET /static/js/bootstrap.min.js HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 11:41:39] "[33mGET /static/js/jquery.easing.min.js HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 11:41:39] "[33mGET /static/js/swiper.min.js HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 11:41:39] "[33mGET /static/js/morphext.min.js HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 11:41:39] "[33mGET /static/js/validator.min.js HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 11:41:39] "[33mGET /static/js/scripts.js HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 11:41:39] "[33mGET /images/screenshot+.png HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 11:41:39] "[33mGET /images/screenshot.png HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 11:41:39] "[33mGET /images/insert_image.png HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 11:41:39] "[33mGET /static/js/popper.min.js HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 11:41:39] "[33mGET /static/js/bootstrap.min.js HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 11:41:39] "[33mGET /static/js/jquery.easing.min.js HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 11:41:39] "[33mGET /static/js/swiper.min.js HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 11:41:39] "[33mGET /static/js/morphext.min.js HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 11:41:39] "[33mGET /static/js/validator.min.js HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 11:41:39] "[33mGET /static/js/scripts.js HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 11:41:39] "[33mGET /images/favicon.png HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 11:41:50] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 11:41:50] "[33mGET /static/css/bootstrap.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 11:41:50] "[33mGET /static/css/fontawesome-all.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 11:41:50] "[33mGET /images/screenshot.png HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 11:41:50] "[33mGET /static/css/swiper.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 11:41:50] "[33mGET /static/css/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 11:41:50] "[33mGET /images/screenshot+.png HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 11:41:50] "[33mGET /images/insert_image.png HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 11:41:50] "[33mGET /static/js/bootstrap.min.js HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 11:41:50] "[33mGET /static/js/jquery.easing.min.js HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 11:41:50] "[33mGET /static/js/morphext.min.js HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 11:41:50] "[33mGET /static/js/validator.min.js HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 11:41:50] "[33mGET /static/js/swiper.min.js HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 11:41:50] "[33mGET /static/js/scripts.js HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 11:41:50] "[33mGET /static/js/popper.min.js HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 11:41:50] "[33mGET /static/js/jquery.min.js HTTP/1.1[0m" 404 -
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 211-719-561
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 11:43:11] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 11:43:11] "[33mGET /static/js/jquery.min.js HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 11:43:11] "[33mGET /static/js/swiper.min.js HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 11:43:11] "[33mGET /static/js/bootstrap.min.js HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 11:43:11] "[33mGET /static/js/jquery.easing.min.js HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 11:43:11] "[33mGET /static/js/popper.min.js HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 11:43:11] "[33mGET /static/js/morphext.min.js HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 11:43:11] "[33mGET /static/js/validator.min.js HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 11:43:11] "[33mGET /static/js/scripts.js HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 11:43:11] "[33mGET /images/screenshot+.png HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 11:43:11] "[33mGET /images/insert_image.png HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 11:43:11] "[33mGET /images/screenshot.png HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 11:43:11] "[33mGET /static/js/bootstrap.min.js HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 11:43:11] "[33mGET /static/webfonts/fa-solid-900.woff2 HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 11:43:11] "[33mGET /static/js/jquery.easing.min.js HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 11:43:11] "[33mGET /static/webfonts/fa-solid-900.woff HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 11:43:11] "[33mGET /static/js/swiper.min.js HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 11:43:11] "[33mGET /static/webfonts/fa-solid-900.ttf HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 11:43:11] "[33mGET /static/js/morphext.min.js HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 11:43:11] "[33mGET /static/js/validator.min.js HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 11:43:11] "[33mGET /static/js/scripts.js HTTP/1.1[0m" 404 -
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 211-719-561
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 11:45:17] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 11:45:17] "[37mGET /static/js/jquery.min.js HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 11:45:17] "[37mGET /static/js/popper.min.js HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 11:45:17] "[37mGET /static/js/bootstrap.min.js HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 11:45:17] "[37mGET /static/js/jquery.easing.min.js HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 11:45:17] "[37mGET /static/js/morphext.min.js HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 11:45:17] "[37mGET /static/js/swiper.min.js HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 11:45:17] "[37mGET /static/js/validator.min.js HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 11:45:17] "[37mGET /static/js/scripts.js HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 11:45:17] "[33mGET /images/screenshot+.png HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 11:45:17] "[33mGET /images/insert_image.png HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 11:45:17] "[33mGET /images/screenshot.png HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 11:45:17] "[37mGET /static/webfonts/fa-solid-900.woff2 HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 11:45:20] "[33mGET /search.html HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 11:45:38] "[33mGET /images/insert_image.png HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 11:45:39] "[33mGET /search.html HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 11:45:42] "[33mGET /search-entrez HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 11:45:44] "[37mGET /search HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 211-719-561
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 11:47:56] "[33mGET /search.html HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 11:47:58] "[33mGET /search.html HTTP/1.1[0m" 404 -
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 211-719-561
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 11:48:20] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 11:48:20] "[37mGET /static/css/fontawesome-all.css HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 11:48:20] "[33mGET /images/screenshot+.png HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 11:48:20] "[33mGET /images/insert_image.png HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 11:48:20] "[33mGET /images/screenshot.png HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 11:48:22] "[37mGET /search HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 11:48:22] "[37mGET /static/css/fontawesome-all.css HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 11:48:22] "[37mGET /static/css/swiper.css HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 11:51:13] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 11:51:13] "[37mGET /static/css/bootstrap.css HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 11:51:13] "[37mGET /static/css/fontawesome-all.css HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 11:51:13] "[37mGET /static/css/swiper.css HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 11:51:13] "[37mGET /static/css/styles.css HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 11:51:13] "[37mGET /static/js/jquery.min.js HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 11:51:13] "[37mGET /static/js/popper.min.js HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 11:51:13] "[37mGET /static/js/bootstrap.min.js HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 11:51:13] "[37mGET /static/js/jquery.easing.min.js HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 11:51:13] "[37mGET /static/js/swiper.min.js HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 11:51:13] "[37mGET /static/js/morphext.min.js HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 11:51:13] "[33mGET /images/screenshot+.png HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 11:51:13] "[37mGET /static/js/validator.min.js HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 11:51:13] "[37mGET /static/js/scripts.js HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 11:51:13] "[33mGET /images/screenshot.png HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 11:51:13] "[33mGET /images/insert_image.png HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 11:51:13] "[37mGET /static/images/dna.jpg HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 11:51:13] "[37mGET /static/images/contact-background.jpg HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 11:51:13] "[37mGET /static/webfonts/fa-solid-900.woff2 HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 11:51:13] "[33mGET /images/insert_image.png HTTP/1.1[0m" 404 -
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 211-719-561
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 12:31:45] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 12:31:45] "[37mGET /static/css/swiper.css HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 12:31:45] "[33mGET /images/screenshot+.png HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 12:31:45] "[37mGET /static/js/swiper.min.js HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 12:31:45] "[33mGET /images/insert_image.png HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 12:31:45] "[33mGET /images/screenshot.png HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 12:31:45] "[37mGET /static/js/validator.min.js HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 12:31:45] "[37mGET /static/webfonts/fa-solid-900.woff2 HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 211-719-561
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Detected change in 'D:\\GitHub\\Course8Informatica\\Course8Informatica\\file_reader.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 211-719-561
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 211-719-561
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 12:56:51] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 12:56:51] "[33mGET /images/screenshot+.png HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 12:56:51] "[33mGET /images/screenshot.png HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 12:56:51] "[33mGET /images/insert_image.png HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 12:56:51] "[37mGET /static/webfonts/fa-solid-900.woff2 HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 12:56:51] "[37mGET /static/images/dna.jpg HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 12:56:51] "[37mGET /static/images/contact-background.jpg HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 12:56:58] "[37mGET /search HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/May/2020 12:58:41] "[37mPOST /search HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Detected change in 'D:\\GitHub\\Course8Informatica\\Course8Informatica\\file_reader.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 211-719-561
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Detected change in 'D:\\GitHub\\Course8Informatica\\Course8Informatica\\file_reader.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 211-719-561
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 211-719-561
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Detected change in 'D:\\GitHub\\Course8Informatica\\Course8Informatica\\file_reader.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 211-719-561
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Detected change in 'D:\\GitHub\\Course8Informatica\\Course8Informatica\\file_reader.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 211-719-561
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Detected change in 'D:\\GitHub\\Course8Informatica\\Course8Informatica\\file_reader.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 211-719-561
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 211-719-561
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 211-719-561
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Detected change in 'D:\\GitHub\\Course8Informatica\\Course8Informatica\\file_reader.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 211-719-561
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 211-719-561
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 211-719-561
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 211-719-561
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 211-719-561
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 211-719-561
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 211-719-561
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 211-719-561
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 211-719-561
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 211-719-561
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 211-719-561
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Detected change in 'D:\\GitHub\\Course8Informatica\\Course8Informatica\\file_reader.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 211-719-561
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Detected change in 'D:\\GitHub\\Course8Informatica\\Course8Informatica\\file_reader.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 211-719-561
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Detected change in 'D:\\GitHub\\Course8Informatica\\Course8Informatica\\file_reader.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 211-719-561
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 211-719-561
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Detected change in 'D:\\GitHub\\Course8Informatica\\Course8Informatica\\file_reader.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 211-719-561
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 211-719-561
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 211-719-561
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Detected change in 'D:\\GitHub\\Course8Informatica\\Course8Informatica\\file_reader.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 211-719-561
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Detected change in 'D:\\GitHub\\Course8Informatica\\Course8Informatica\\constants.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 211-719-561
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [02/Jun/2020 11:47:19] "[33mGET /search-entrez HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [02/Jun/2020 11:47:22] "[37mGET /search HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Jun/2020 11:47:22] "[36mGET /static/css/fontawesome-all.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [02/Jun/2020 11:47:22] "[36mGET /static/css/bootstrap.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [02/Jun/2020 11:47:22] "[36mGET /static/css/swiper.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [02/Jun/2020 11:47:22] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [02/Jun/2020 11:47:25] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Jun/2020 11:47:25] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [02/Jun/2020 11:47:25] "[36mGET /static/js/jquery.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [02/Jun/2020 11:47:25] "[36mGET /static/js/popper.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [02/Jun/2020 11:47:25] "[36mGET /static/js/bootstrap.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [02/Jun/2020 11:47:25] "[36mGET /static/js/jquery.easing.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [02/Jun/2020 11:47:25] "[36mGET /static/js/swiper.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [02/Jun/2020 11:47:25] "[36mGET /static/js/morphext.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [02/Jun/2020 11:47:25] "[33mGET /images/screenshot.png HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [02/Jun/2020 11:47:25] "[33mGET /images/screenshot+.png HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [02/Jun/2020 11:47:25] "[36mGET /static/js/validator.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [02/Jun/2020 11:47:25] "[33mGET /images/insert_image.png HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [02/Jun/2020 11:47:25] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [02/Jun/2020 11:47:25] "[36mGET /static/images/dna.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [02/Jun/2020 11:47:25] "[36mGET /static/images/contact-background.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [02/Jun/2020 11:47:25] "[36mGET /static/webfonts/fa-solid-900.woff2 HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [02/Jun/2020 11:47:25] "[33mGET /images/insert_image.png HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [02/Jun/2020 11:47:25] "[33mGET /images/favicon.png HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [02/Jun/2020 11:47:57] "[37mGET /search HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 211-719-561
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [02/Jun/2020 11:50:53] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Jun/2020 11:50:53] "[37mGET /static/images/b-jolink-foto.png HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Jun/2020 11:50:53] "[33mGET /images/screenshot+.png HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [02/Jun/2020 11:50:53] "[33mGET /images/insert_image.png HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [02/Jun/2020 11:50:53] "[33mGET /images/screenshot.png HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [02/Jun/2020 11:50:57] "[37mGET /search HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 211-719-561
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 211-719-561
+INFO:werkzeug: * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Detected change in 'D:\\GitHub\\Course8Informatica\\wsgi.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 211-719-561
+INFO:werkzeug: * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Detected change in 'D:\\GitHub\\Course8Informatica\\wsgi.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 211-719-561
+INFO:werkzeug: * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2020 01:43:27] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2020 01:43:27] "[37mGET /static/css/bootstrap.css HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2020 01:43:27] "[37mGET /static/css/fontawesome-all.css HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2020 01:43:27] "[37mGET /static/css/swiper.css HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2020 01:43:27] "[37mGET /static/css/styles.css HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2020 01:43:27] "[37mGET /static/js/jquery.min.js HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2020 01:43:27] "[37mGET /static/js/popper.min.js HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2020 01:43:27] "[37mGET /static/js/bootstrap.min.js HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2020 01:43:27] "[37mGET /static/js/jquery.easing.min.js HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2020 01:43:27] "[37mGET /static/js/swiper.min.js HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2020 01:43:27] "[37mGET /static/js/morphext.min.js HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2020 01:43:27] "[37mGET /static/js/validator.min.js HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2020 01:43:27] "[37mGET /static/js/scripts.js HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2020 01:43:27] "[37mGET /static/images/b-jolink-foto.png HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2020 01:43:27] "[33mGET /images/screenshot.png HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2020 01:43:27] "[33mGET /images/insert_image.png HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2020 01:43:27] "[33mGET /images/screenshot+.png HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2020 01:43:27] "[37mGET /static/images/dna.jpg HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2020 01:43:27] "[37mGET /static/images/contact-background.jpg HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2020 01:43:27] "[37mGET /static/webfonts/fa-solid-900.woff2 HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2020 01:43:27] "[33mGET /images/favicon.png HTTP/1.1[0m" 404 -
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 211-719-561
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2020 01:45:18] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2020 01:45:18] "[37mGET /static/js/jquery.easing.min.js HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2020 01:45:18] "[33mGET /images/screenshot+.png HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2020 01:45:18] "[33mGET /images/insert_image.png HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2020 01:45:18] "[33mGET /images/screenshot.png HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2020 01:45:18] "[37mGET /static/images/dna.jpg HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2020 01:45:18] "[37mGET /static/images/contact-background.jpg HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2020 01:45:18] "[37mGET /static/webfonts/fa-solid-900.woff2 HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2020 01:45:35] "[37mGET /search HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2020 01:45:38] "[37mGET /search HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2020 01:45:40] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2020 01:45:40] "[33mGET /images/screenshot+.png HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2020 01:45:40] "[33mGET /images/screenshot.png HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2020 01:45:40] "[33mGET /images/insert_image.png HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2020 01:45:40] "[33mGET /images/insert_image.png HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2020 01:45:42] "[37mGET /search HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2020 01:45:42] "[37mGET /static/css/swiper.css HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2020 01:45:44] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2020 01:45:44] "[33mGET /images/screenshot+.png HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2020 01:45:44] "[33mGET /images/screenshot.png HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2020 01:45:44] "[33mGET /images/insert_image.png HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2020 01:45:44] "[33mGET /images/insert_image.png HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2020 01:45:44] "[33mGET /images/favicon.png HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2020 01:45:53] "[37mGET /search HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2020 01:45:58] "[37mPOST /search HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2020 01:46:02] "[33mGET /static/css/bootstrap.css.map HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2020 01:52:34] "[37mGET /static/css/styles.css HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2020 01:52:34] "[37mGET /static/css/styles.css HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2020 01:52:34] "[37mGET /static/css/styles.css HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2020 01:52:34] "[37mGET /static/css/bootstrap.css HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2020 01:52:34] "[37mGET /static/css/bootstrap.css HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2020 01:52:34] "[37mGET /static/css/bootstrap.css HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2020 01:52:34] "[33mGET /static/css/bootstrap.css.map HTTP/1.1[0m" 404 -
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 211-719-561
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2020 01:53:18] "[37mPOST /search HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2020 01:53:18] "[37mGET /static/css/fontawesome-all.css HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2020 01:53:18] "[37mGET /static/css/swiper.css HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2020 01:53:19] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2020 01:53:19] "[33mGET /static/css/bootstrap.css.map HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2020 01:53:20] "[37mPOST /search HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2020 01:53:20] "[33mGET /static/css/bootstrap.css.map HTTP/1.1[0m" 404 -
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 211-719-561
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2020 01:54:09] "[37mPOST /search HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Detected change in 'D:\\GitHub\\Course8Informatica\\Course8Informatica\\routes.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 211-719-561
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 211-719-561
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2020 02:00:36] "[37mPOST /search HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2020 02:00:36] "[37mGET /static/css/bootstrap.css HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2020 02:00:36] "[37mGET /static/css/fontawesome-all.css HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2020 02:00:36] "[37mGET /static/css/swiper.css HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2020 02:00:36] "[37mGET /static/css/styles.css HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2020 02:00:36] "[36mGET /static/js/jquery.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2020 02:00:36] "[36mGET /static/js/popper.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2020 02:00:36] "[36mGET /static/js/bootstrap.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2020 02:00:36] "[36mGET /static/js/jquery.easing.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2020 02:00:36] "[36mGET /static/js/swiper.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2020 02:00:36] "[36mGET /static/js/morphext.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2020 02:00:36] "[36mGET /static/js/validator.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2020 02:00:36] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2020 02:00:36] "[37mGET /static/images/dna.jpg HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 211-719-561
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2020 02:04:43] "[37mPOST /search HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2020 02:04:43] "[36mGET /static/js/jquery.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2020 02:04:43] "[36mGET /static/js/popper.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2020 02:04:43] "[36mGET /static/js/bootstrap.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2020 02:04:43] "[36mGET /static/js/jquery.easing.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2020 02:04:43] "[36mGET /static/js/swiper.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2020 02:04:43] "[36mGET /static/js/morphext.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2020 02:04:43] "[36mGET /static/js/validator.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2020 02:04:43] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2020 02:04:43] "[37mGET /static/css/bootstrap.css HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2020 02:04:43] "[37mGET /static/css/fontawesome-all.css HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2020 02:04:43] "[37mGET /static/css/swiper.css HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2020 02:04:43] "[37mGET /static/css/styles.css HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2020 02:04:43] "[37mGET /static/images/dna.jpg HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 211-719-561
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2020 02:06:03] "[37mPOST /search HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2020 02:06:03] "[36mGET /static/css/bootstrap.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2020 02:06:03] "[36mGET /static/css/fontawesome-all.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2020 02:06:03] "[36mGET /static/css/swiper.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2020 02:06:03] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2020 02:06:03] "[36mGET /static/js/jquery.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2020 02:06:03] "[36mGET /static/js/popper.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2020 02:06:03] "[36mGET /static/js/bootstrap.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2020 02:06:03] "[36mGET /static/js/jquery.easing.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2020 02:06:03] "[36mGET /static/js/swiper.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2020 02:06:03] "[36mGET /static/js/morphext.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2020 02:06:03] "[36mGET /static/js/validator.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2020 02:06:03] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2020 02:06:03] "[37mGET /static/images/dna.jpg HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 211-719-561
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2020 02:06:18] "[37mPOST /search HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2020 02:06:18] "[36mGET /static/js/jquery.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2020 02:06:18] "[36mGET /static/js/bootstrap.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2020 02:06:18] "[36mGET /static/js/popper.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2020 02:06:18] "[36mGET /static/js/jquery.easing.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2020 02:06:18] "[36mGET /static/js/swiper.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2020 02:06:18] "[36mGET /static/js/morphext.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2020 02:06:18] "[36mGET /static/js/validator.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2020 02:06:18] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2020 02:06:18] "[37mGET /static/css/bootstrap.css HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2020 02:06:18] "[37mGET /static/css/fontawesome-all.css HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2020 02:06:18] "[37mGET /static/css/swiper.css HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2020 02:06:18] "[37mGET /static/css/styles.css HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2020 02:06:18] "[37mGET /static/images/dna.jpg HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 211-719-561
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2020 02:06:36] "[37mPOST /search HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2020 02:06:36] "[36mGET /static/css/bootstrap.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2020 02:06:36] "[36mGET /static/css/fontawesome-all.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2020 02:06:36] "[36mGET /static/css/swiper.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2020 02:06:36] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2020 02:06:36] "[36mGET /static/js/jquery.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2020 02:06:36] "[36mGET /static/js/popper.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2020 02:06:36] "[36mGET /static/js/bootstrap.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2020 02:06:36] "[36mGET /static/js/jquery.easing.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2020 02:06:36] "[36mGET /static/js/swiper.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2020 02:06:36] "[36mGET /static/js/morphext.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2020 02:06:36] "[36mGET /static/js/validator.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2020 02:06:36] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2020 02:06:36] "[37mGET /static/images/dna.jpg HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 211-719-561
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2020 02:09:03] "[37mPOST /search HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2020 02:09:07] "[37mPOST /search HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Detected change in 'D:\\GitHub\\Course8Informatica\\Course8Informatica\\routes.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 211-719-561
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 211-719-561
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2020 02:15:43] "[37mGET /search HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2020 02:15:43] "[37mGET /static/images/dna.jpg HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2020 02:16:34] "[37mPOST /search HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 211-719-561
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2020 02:17:11] "[37mPOST /search HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2020 02:17:14] "[37mPOST /search HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 211-719-561
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2020 02:18:14] "[37mGET /search HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2020 02:18:16] "[37mGET /search HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2020 02:18:16] "[36mGET /static/css/bootstrap.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2020 02:18:16] "[36mGET /static/css/fontawesome-all.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2020 02:18:16] "[36mGET /static/css/swiper.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2020 02:18:16] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2020 02:18:16] "[36mGET /static/js/jquery.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2020 02:18:16] "[36mGET /static/js/popper.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2020 02:18:16] "[36mGET /static/js/bootstrap.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2020 02:18:16] "[36mGET /static/js/jquery.easing.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2020 02:18:16] "[36mGET /static/js/swiper.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2020 02:18:16] "[36mGET /static/js/morphext.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2020 02:18:16] "[36mGET /static/js/validator.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2020 02:18:16] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2020 02:18:16] "[36mGET /static/images/dna.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2020 02:18:24] "[37mPOST /search HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2020 02:19:21] "[37mPOST /search HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2020 02:19:30] "[37mPOST /search HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2020 02:19:40] "[37mPOST /search HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Detected change in 'D:\\GitHub\\Course8Informatica\\Course8Informatica\\routes.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 211-719-561
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 211-719-561
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2020 02:28:38] "[37mPOST /search HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2020 02:28:38] "[37mGET /static/css/bootstrap.css HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2020 02:28:38] "[37mGET /static/css/fontawesome-all.css HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2020 02:28:38] "[37mGET /static/css/swiper.css HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2020 02:28:38] "[37mGET /static/css/styles.css HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2020 02:28:38] "[36mGET /static/js/jquery.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2020 02:28:38] "[36mGET /static/js/popper.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2020 02:28:38] "[36mGET /static/js/bootstrap.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2020 02:28:38] "[36mGET /static/js/jquery.easing.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2020 02:28:38] "[36mGET /static/js/swiper.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2020 02:28:38] "[36mGET /static/js/morphext.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2020 02:28:38] "[36mGET /static/js/validator.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2020 02:28:38] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2020 02:28:38] "[37mGET /static/images/dna.jpg HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2020 02:28:39] "[37mGET /search HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2020 02:28:44] "[33mPOST /update_genepanel HTTP/1.1[0m" 404 -
+INFO:werkzeug: * Detected change in 'D:\\GitHub\\Course8Informatica\\Course8Informatica\\routes.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 211-719-561
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Detected change in 'D:\\GitHub\\Course8Informatica\\Course8Informatica\\routes.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 211-719-561
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Detected change in 'D:\\GitHub\\Course8Informatica\\Course8Informatica\\routes.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 211-719-561
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 211-719-561
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Detected change in 'D:\\GitHub\\Course8Informatica\\Course8Informatica\\routes.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 211-719-561
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2020 02:32:53] "[33mGET /update_genepanel HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2020 02:32:58] "[37mGET /search HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2020 02:33:04] "[33mPOST /update_genepanel HTTP/1.1[0m" 404 -
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 211-719-561
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2020 02:33:18] "[37mGET /search HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2020 02:33:18] "[36mGET /static/css/bootstrap.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2020 02:33:18] "[36mGET /static/css/fontawesome-all.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2020 02:33:18] "[36mGET /static/css/swiper.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2020 02:33:18] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2020 02:33:18] "[36mGET /static/js/jquery.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2020 02:33:18] "[36mGET /static/js/popper.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2020 02:33:18] "[36mGET /static/js/bootstrap.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2020 02:33:18] "[36mGET /static/js/swiper.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2020 02:33:18] "[36mGET /static/js/jquery.easing.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2020 02:33:18] "[36mGET /static/js/morphext.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2020 02:33:18] "[36mGET /static/js/jquery.easing.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2020 02:33:18] "[36mGET /static/js/jquery.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2020 02:33:18] "[36mGET /static/js/bootstrap.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2020 02:33:18] "[36mGET /static/js/morphext.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2020 02:33:18] "[36mGET /static/js/popper.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2020 02:33:18] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2020 02:33:18] "[36mGET /static/js/swiper.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2020 02:33:18] "[36mGET /static/js/validator.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2020 02:33:18] "[37mGET /search HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2020 02:33:18] "[36mGET /static/css/bootstrap.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2020 02:33:18] "[36mGET /static/css/fontawesome-all.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2020 02:33:18] "[36mGET /static/css/swiper.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2020 02:33:18] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2020 02:33:18] "[36mGET /static/js/jquery.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2020 02:33:18] "[36mGET /static/js/popper.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2020 02:33:18] "[36mGET /static/js/bootstrap.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2020 02:33:18] "[36mGET /static/js/jquery.easing.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2020 02:33:18] "[36mGET /static/js/morphext.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2020 02:33:18] "[36mGET /static/js/swiper.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2020 02:33:18] "[36mGET /static/js/validator.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2020 02:33:18] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2020 02:33:18] "[36mGET /static/images/dna.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2020 02:33:22] "[32mPOST /update_genepanel HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2020 02:33:22] "[37mGET /search HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 211-719-561
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2020 02:33:50] "[32mPOST /update_genepanel HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2020 02:33:50] "[37mGET /search HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Detected change in 'D:\\GitHub\\Course8Informatica\\Course8Informatica\\routes.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 211-719-561
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Detected change in 'D:\\GitHub\\Course8Informatica\\Course8Informatica\\routes.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 211-719-561
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2020 02:36:15] "[37mGET /search HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2020 02:36:17] "[32mPOST /update_genepanel HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2020 02:36:17] "[37mGET /search HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Detected change in 'D:\\GitHub\\Course8Informatica\\Course8Informatica\\routes.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 211-719-561
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 211-719-561
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Detected change in 'D:\\GitHub\\Course8Informatica\\Course8Informatica\\file_reader.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 211-719-561
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Detected change in 'D:\\GitHub\\Course8Informatica\\Course8Informatica\\gene_retriever.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 211-719-561
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2020 02:43:52] "[32mPOST /update_genepanel HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2020 02:43:52] "[37mGET /search HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2020 02:43:54] "[32mPOST /update_genepanel HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2020 02:43:54] "[37mGET /search HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2020 02:43:57] "[37mGET /search HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2020 02:44:01] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2020 02:44:01] "[33mGET /images/screenshot+.png HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2020 02:44:01] "[33mGET /images/screenshot.png HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2020 02:44:01] "[33mGET /images/insert_image.png HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2020 02:44:01] "[33mGET /images/favicon.png HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2020 02:44:02] "[37mGET /search HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Detected change in 'D:\\GitHub\\Course8Informatica\\Course8Informatica\\routes.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 211-719-561
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2020 02:53:04] "[37mGET /search HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2020 02:53:15] "[35m[1mPOST /update_genepanel HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2020 02:53:15] "[37mGET /update_genepanel?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2020 02:53:15] "[37mGET /update_genepanel?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2020 02:53:15] "[37mGET /update_genepanel?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2020 02:53:15] "[37mGET /update_genepanel?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2020 02:53:15] "[37mGET /update_genepanel?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2020 02:53:15] "[37mGET /update_genepanel?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 211-719-561
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2020 02:53:25] "[37mGET /search HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2020 02:53:25] "[36mGET /static/js/jquery.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2020 02:53:25] "[36mGET /static/js/popper.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2020 02:53:25] "[36mGET /static/js/bootstrap.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2020 02:53:25] "[36mGET /static/js/jquery.easing.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2020 02:53:25] "[36mGET /static/js/swiper.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2020 02:53:25] "[36mGET /static/js/morphext.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2020 02:53:25] "[36mGET /static/js/validator.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2020 02:53:25] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2020 02:53:25] "[37mGET /static/css/bootstrap.css HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2020 02:53:25] "[37mGET /static/css/fontawesome-all.css HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2020 02:53:25] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2020 02:53:25] "[37mGET /static/css/swiper.css HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2020 02:53:25] "[37mGET /static/images/dna.jpg HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2020 02:53:28] "[32mPOST /update_genepanel HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2020 02:53:28] "[37mGET /search HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 211-719-561
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2020 02:53:53] "[32mPOST /update_genepanel HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2020 02:53:53] "[37mGET /search HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2020 02:54:00] "[32mPOST /update_genepanel HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2020 02:54:00] "[37mGET /search HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2020 02:54:11] "[37mPOST /search HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 211-719-561
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Detected change in 'D:\\GitHub\\Course8Informatica\\Course8Informatica\\routes.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 211-719-561
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Detected change in 'D:\\GitHub\\Course8Informatica\\Course8Informatica\\file_reader.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 211-719-561
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Detected change in 'D:\\GitHub\\Course8Informatica\\Course8Informatica\\routes.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 211-719-561
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Detected change in 'D:\\GitHub\\Course8Informatica\\Course8Informatica\\file_reader.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 211-719-561
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Detected change in 'D:\\GitHub\\Course8Informatica\\Course8Informatica\\file_reader.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 211-719-561
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Detected change in 'D:\\GitHub\\Course8Informatica\\Course8Informatica\\file_reader.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 211-719-561
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Detected change in 'D:\\GitHub\\Course8Informatica\\Course8Informatica\\file_reader.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 211-719-561
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Detected change in 'D:\\GitHub\\Course8Informatica\\Course8Informatica\\file_reader.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 211-719-561
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Detected change in 'D:\\GitHub\\Course8Informatica\\Course8Informatica\\file_reader.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 211-719-561
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 211-719-561
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 211-719-561
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Detected change in 'D:\\GitHub\\Course8Informatica\\Course8Informatica\\routes.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 211-719-561
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 211-719-561
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2020 22:48:39] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2020 22:48:39] "[36mGET /static/css/bootstrap.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2020 22:48:39] "[36mGET /static/css/fontawesome-all.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2020 22:48:39] "[33mGET /images/screenshot+.png HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2020 22:48:39] "[33mGET /images/screenshot.png HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2020 22:48:39] "[33mGET /images/insert_image.png HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2020 22:48:39] "[36mGET /static/css/swiper.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2020 22:48:39] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2020 22:48:39] "[36mGET /static/js/jquery.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2020 22:48:39] "[36mGET /static/js/popper.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2020 22:48:39] "[36mGET /static/js/bootstrap.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2020 22:48:39] "[36mGET /static/js/jquery.easing.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2020 22:48:39] "[36mGET /static/js/swiper.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2020 22:48:39] "[36mGET /static/js/morphext.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2020 22:48:39] "[36mGET /static/js/validator.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2020 22:48:39] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2020 22:48:39] "[36mGET /static/images/b-jolink-foto.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2020 22:48:39] "[37mGET /static/webfonts/fa-solid-900.woff2 HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2020 22:48:39] "[37mGET /static/images/dna.jpg HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2020 22:48:39] "[37mGET /static/images/contact-background.jpg HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2020 22:48:39] "[33mGET /images/insert_image.png HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2020 22:48:39] "[33mGET /images/favicon.png HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2020 22:48:57] "[37mGET /static/webfonts/fa-regular-400.woff2 HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Detected change in 'D:\\GitHub\\Course8Informatica\\Course8Informatica\\routes.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 211-719-561
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 211-719-561
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [08/Jun/2020 12:44:51] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/Jun/2020 12:44:52] "[37mGET /static/images/b-jolink-foto.png HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/Jun/2020 12:44:52] "[36mGET /static/css/bootstrap.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [08/Jun/2020 12:44:52] "[36mGET /static/css/fontawesome-all.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [08/Jun/2020 12:44:52] "[33mGET /images/screenshot+.png HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [08/Jun/2020 12:44:52] "[33mGET /images/insert_image.png HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [08/Jun/2020 12:44:52] "[33mGET /images/screenshot.png HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [08/Jun/2020 12:44:52] "[36mGET /static/css/swiper.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [08/Jun/2020 12:44:52] "[36mGET /static/js/jquery.easing.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [08/Jun/2020 12:44:52] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [08/Jun/2020 12:44:52] "[36mGET /static/js/jquery.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [08/Jun/2020 12:44:52] "[36mGET /static/js/popper.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [08/Jun/2020 12:44:52] "[36mGET /static/js/bootstrap.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [08/Jun/2020 12:44:52] "[36mGET /static/js/swiper.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [08/Jun/2020 12:44:52] "[36mGET /static/js/morphext.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [08/Jun/2020 12:44:52] "[36mGET /static/js/validator.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [08/Jun/2020 12:44:52] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [08/Jun/2020 12:44:52] "[37mGET /static/webfonts/fa-solid-900.woff2 HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/Jun/2020 12:44:52] "[37mGET /static/images/dna.jpg HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/Jun/2020 12:44:52] "[37mGET /static/images/contact-background.jpg HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/Jun/2020 12:44:52] "[33mGET /images/insert_image.png HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [08/Jun/2020 12:44:52] "[33mGET /images/favicon.png HTTP/1.1[0m" 404 -
+INFO:werkzeug: * Detected change in 'D:\\GitHub\\Course8Informatica\\Course8Informatica\\routes.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 211-719-561
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 211-719-561
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [08/Jun/2020 12:45:12] "[33mGET / HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [08/Jun/2020 12:45:12] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [08/Jun/2020 12:45:15] "[33mGET /database HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [08/Jun/2020 12:45:15] "[35m[1mGET /crash_the_server HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [08/Jun/2020 12:45:16] "[33mGET / HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [08/Jun/2020 12:45:16] "[37mGET /test_module_import HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/Jun/2020 12:45:17] "[37mGET /database_test HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/Jun/2020 12:45:20] "[37mGET /search HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/Jun/2020 12:45:20] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug: * Detected change in 'D:\\GitHub\\Course8Informatica\\Course8Informatica\\routes.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 211-719-561
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 211-719-561
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [08/Jun/2020 12:51:21] "[37mGET /search HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/Jun/2020 12:51:25] "[37mPOST /search HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/Jun/2020 12:51:33] "[37mPOST /search HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Detected change in 'D:\\GitHub\\Course8Informatica\\Course8Informatica\\csv_formatter.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 211-719-561
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Detected change in 'D:\\GitHub\\Course8Informatica\\Course8Informatica\\csv_formatter.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 211-719-561
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 211-719-561
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [08/Jun/2020 12:57:32] "[37mPOST /search HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/Jun/2020 12:57:33] "[37mPOST /search HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/Jun/2020 12:57:43] "[37mPOST /search HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/Jun/2020 12:57:48] "[37mPOST /search HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Detected change in 'D:\\GitHub\\Course8Informatica\\Course8Informatica\\csv_formatter.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 211-719-561
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Detected change in 'D:\\GitHub\\Course8Informatica\\Course8Informatica\\csv_formatter.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 211-719-561
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Detected change in 'D:\\GitHub\\Course8Informatica\\Course8Informatica\\__init__.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 211-719-561
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Detected change in 'D:\\GitHub\\Course8Informatica\\Course8Informatica\\pubmedsearchtool.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 211-719-561
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Detected change in 'D:\\GitHub\\Course8Informatica\\Course8Informatica\\pubmedsearchtool.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 211-719-561
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Detected change in 'D:\\GitHub\\Course8Informatica\\Course8Informatica\\routes.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 211-719-561
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Detected change in 'D:\\GitHub\\Course8Informatica\\Course8Informatica\\csv_formatter.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 211-719-561
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Detected change in 'D:\\GitHub\\Course8Informatica\\Course8Informatica\\database_clasess.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 211-719-561
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Detected change in 'D:\\GitHub\\Course8Informatica\\Course8Informatica\\database_clasess.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 211-719-561
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Detected change in 'D:\\GitHub\\Course8Informatica\\Course8Informatica\\database_clasess.py', reloading
+INFO:werkzeug: * Restarting with stat
