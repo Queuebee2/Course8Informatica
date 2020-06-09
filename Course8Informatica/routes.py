@@ -98,13 +98,14 @@ def search_test():
     if request.method == 'POST':
         if export == 'Export data':
             print(request.form.getlist("checkbox"))
-            content = "PMID;Gene(s);Title\n"
+            content = "PMID;Gene(s);Mesh terms;Title\n"
             for i in range(len(collapsible_data)):
                 if request.form.get(f"checkbox{i}", "") == "on":
                     PMID = collapsible_data[i][3]
                     genes = gr.find_genes(collapsible_data[i])
+                    mesh = collapsible_data[i][5]
                     title = collapsible_data[i][0]
-                    content += cf.format_csv_data(PMID, genes, title) + '\n'
+                    content += cf.format_csv_data(PMID, genes, title, mesh) + '\n'
             return Response(content,mimetype="text/csv",
                             headers={
                                 "Content-disposition":

@@ -1,6 +1,6 @@
 import re
 
-def format_csv_data(PMID, genes, title,delim=';'):
+def format_csv_data(PMID, genes, title, mesh, delim=';'):
     """formats data into csv format
 
     Args:
@@ -15,6 +15,10 @@ def format_csv_data(PMID, genes, title,delim=';'):
         1. verify genes param description
     """
     title = re.sub(r'<span.*<b>|</b></span>', '', title)
+    mesh = mesh.split("</b></span>")
+    for m in mesh:
+        m = re.sub(r'<span class="btn-solid-lg page-scroll" title=[^>]*><b>', '', str(m))
+    mesh = ", ".join(mesh)
     genes = list(genes.keys())
     genedata = ""
     for i in range(len(genes)):
@@ -23,6 +27,6 @@ def format_csv_data(PMID, genes, title,delim=';'):
         else:
             genedata += genes[i]
 
-    data = f'{PMID}{delim}{genedata}{delim}{title}'
+    data = f'{PMID}{delim}{genedata}{delim}{mesh}{delim}{title}'
 
     return data
