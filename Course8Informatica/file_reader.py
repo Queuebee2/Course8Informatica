@@ -4,9 +4,10 @@ import io
 
 # Filename had to be changable, so put it into a global for now
 # Todo rework into a class or change methods to take filenames
-#  because we dont need more cyclical dependencies -_-
+#  because we dont need more cyclical dependencies
 #  https://stackoverflow.com/questions/3400525/global-variable-from-a-different-file-python
 GENEPANEL_FILENAME = "Course8Informatica/GenPanels_merged_DG-2.17.0.txt"
+
 
 def update_filename(filename):
     """ Upodates filename
@@ -17,13 +18,11 @@ def update_filename(filename):
     print(f'updating global filename {GENEPANEL_FILENAME} to {filename}')
     GENEPANEL_FILENAME = filename
 
+
 def test_is_filename_updated():
     """ """
     return GENEPANEL_FILENAME
 
-def read_disease_abbreviation_file():
-    from Course8Informatica.constants import abbrevations
-    # log : output saved as a list in a py file
 
 def read_gene_file():
     """ parses a textfile of genes
@@ -69,7 +68,7 @@ def read_genepanel_file(filename="Course8Informatica/GenPanels_merged_DG-2.17.0.
         @DEPRECATED - filename (str) : name of genepanel file
 
     Returns:
-          - list(heritanceDict.keys()): list of  heritanceDict keys  todo ??
+          - list(heritanceDict.keys()): list of  heritanceDict keys
           - symbols: list of symbols
 
     """

@@ -78,6 +78,8 @@ def search_test():
 
     :return:
     """
+    # requestdata saves page-data when buttons are pressed but information
+    # does not need to be refreshed
     global requestdata
 
     search = ['', '', '', '', '']
@@ -92,10 +94,11 @@ def search_test():
     export = request.form.get("export", "")
     update = request.form.get("update", "")
 
+    # collapsible data takes requestdata as default information.
     collapsible_data = requestdata
-    print(requestdata)
 
     if request.method == 'POST':
+        # Method for exporting data
         if export == 'Export data':
             print(request.form.getlist("checkbox"))
             content = "PMID;Gene(s);Mesh terms;Title\n"
@@ -112,24 +115,22 @@ def search_test():
                                 "attachment; filename=gene_results.csv"
                             })
 
-        if marked == 'Select':
-            print("Mark")
-            for i in range(10):
-                if request.form.get("checkbox" + str(i), "") == "on":
-                    print(i)
-
+        # For selecting all checkboxes.
         if selectall == "Select all":
             return render_template('search.html',
                                    results=collapsible_data, mark="checked")
 
+        # For de-selecting all checkboxes.
         if deselectall == "De-select all":
             return render_template('search.html',
                                    results=collapsible_data, mark="")
 
+    # if any of the given search fields are not empty: perform search.
     if search[0] or search[1] or search[2]:
         results = ps.run_query(search, 'abstract')
         collapsible_data = ps.create_collapsible(results)
         collapsible_data = ir.find_genes(collapsible_data)
+        # if checkbox for showing phenotypes is checked
         if request.form.get("checkbox_phenotype", "") == "on":
             collapsible_data = ir.find_mesh_terms(collapsible_data)
         requestdata = collapsible_data
