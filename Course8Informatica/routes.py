@@ -129,6 +129,8 @@ def search_test():
         results = ps.run_query(search, 'abstract')
         collapsible_data = ps.create_collapsible(results)
         collapsible_data = gr.find_genes(collapsible_data)
+        if request.form.get("checkbox_phenotype", "") == "on":
+            collapsible_data = gr.find_mesh_terms(collapsible_data)
         requestdata = collapsible_data
     return render_template('search.html',
                            results=collapsible_data)
